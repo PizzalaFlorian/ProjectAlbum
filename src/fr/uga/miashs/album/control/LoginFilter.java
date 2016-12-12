@@ -1,6 +1,8 @@
 package fr.uga.miashs.album.control;
 
 import java.io.IOException;
+
+import javax.inject.Inject;
 import javax.servlet.Filter;
 import javax.servlet.FilterChain;
 import javax.servlet.FilterConfig;
@@ -19,6 +21,8 @@ import fr.uga.miashs.album.util.Pages;
 @WebFilter("/faces/*")
 public class LoginFilter implements Filter {
 
+	@Inject
+	private AppUserSession appUserSession;
 	
 	public String[] filteredPages;
     
@@ -56,9 +60,10 @@ public class LoginFilter implements Filter {
 		for (String s : filteredPages) {
 			if (s.equals(requestedUri)) {
 				 HttpSession session = ((HttpServletRequest) request).getSession(false);
-				 if (session == null || 
+				 if(appUserSession == null || appUserSession.getConnectedUser() == null){
+				 /*if (session == null || 
 						 ((AppUserSession) session.getAttribute("appUserSession")) == null ||
-								 ((AppUserSession) session.getAttribute("appUserSession")).getConnectedUser()==null) {
+								 ((AppUserSession) session.getAttribute("appUserSession")).getConnectedUser()==null) {*/
 					 request.getRequestDispatcher(Pages.login).forward(request, response);
 				 }
 			}

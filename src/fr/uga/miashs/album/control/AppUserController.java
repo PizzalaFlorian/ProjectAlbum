@@ -57,6 +57,10 @@ public class AppUserController implements Serializable {
 		
 	}
 	
+	public String abord(){
+		return Pages.login;
+	}
+	
 	public String delete(long userId) {
 		appUserService.deleteById(userId);
 		

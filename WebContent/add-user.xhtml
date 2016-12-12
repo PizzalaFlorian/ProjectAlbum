@@ -9,30 +9,31 @@
 
 	<h:form>
 		<h:outputLabel for="email" value="Adresse email : " />
-		<h:inputText id="email" value="#{appUserController.user.email}" 
+		<p:inputText id="email" value="#{appUserController.user.email}" 
 			title="Renseignez votre email"/>
 			<!-- validator="#{ajoutAlbum.validerNomAlbum}" -->
 		<br/>
 		<h:outputLabel for="lastname" value="Nom : " />
-		<h:inputText id="lastname" value="#{appUserController.user.lastname}" 
+		<p:inputText id="lastname" value="#{appUserController.user.lastname}" 
 			title="Donnez votre nom"/>
 			<!-- validator="#{ajoutAlbum.validerZip}"  -->
 		<br/>
 		<h:outputLabel for="firstname" value="Prénom : " />
-		<h:inputText id="firstname" value="#{appUserController.user.firstname}" 
+		<p:inputText id="firstname" value="#{appUserController.user.firstname}" 
 			title="Donnez votre prénom"/>
 			<!-- validator="#{ajoutAlbum.validerZip}"  -->
 		<br/>
 		
 		<h:outputLabel for="password" value="Mot de passe : " />
-		<h:inputSecret id="password" value="#{appUserController.user.password}" 
+		<p:password id="password" value="#{appUserController.user.password}" 
 			title="Donnez un mot de passe"/>
 			<!-- validator="#{ajoutAlbum.validerZip}"  -->
 		<br/>
 		
 		<h:commandButton action="#{appUserController.create()}" value="Créer mon compte"/>
+		
 	</h:form>
-	
+	<h:commandButton action="#{appUserController.abord()}" value="Annuler"/>
 </h:body>
 
 </html>

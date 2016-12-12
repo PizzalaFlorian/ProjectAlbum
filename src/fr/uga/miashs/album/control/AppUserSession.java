@@ -51,6 +51,10 @@ public class AppUserSession implements Serializable {
 		return Pages.list_album;
 	}
 	
+	public String goToAdd(){
+		return Pages.add_user;
+	}
+	
 	public String logout() {
 		FacesContext context = FacesContext.getCurrentInstance();
 		((HttpSession) context.getExternalContext().getSession(false)).invalidate();

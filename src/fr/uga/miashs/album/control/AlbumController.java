@@ -58,4 +58,9 @@ public class AlbumController {
 		albumService.delete(a);
 		return Pages.list_album;
 	}
+	
+	public String getPictures(Album a){
+		a.getPictures();
+		return Pages.list_album;
+	}
 }

@@ -34,6 +34,7 @@ public class AlbumController {
 	
 	
 	public String createAlbum() {
+		Album album = getAlbum();
 		try {
 			albumService.create(album);
 		} catch (ServiceException e) {
@@ -51,5 +52,10 @@ public class AlbumController {
 			e.printStackTrace();
 		}
 		return null;
+	}
+	
+	public String delete (Album a){
+		albumService.delete(a);
+		return Pages.list_album;
 	}
 }

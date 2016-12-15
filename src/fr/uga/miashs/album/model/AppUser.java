@@ -31,7 +31,7 @@ public class AppUser {
 	private long id;
 	
  	
-	@Pattern(regexp="^[A-Z0-9._%+-]+@[A-Z0-9.-]+\\.[A-Z]{2,6}$", message="{appuser.email.regex}")
+	@Pattern(regexp="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,6}$", message="{appuser.email.regex}")
 	@NotNull
 	private String email;
 	

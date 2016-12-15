@@ -24,8 +24,10 @@
    </h:column>
   
    <h:column>
-   	  <h:commandLink action="#{albumController.delete(alb)}" value="delete"/>
-      <h:commandLink action="#{albumController.delete(alb)}" value="delete"/>
+   	  <h:commandLink action="#{albumController.getPicture(alb)}" value="Ouvrir"/>
+   </h:column>
+   <h:column>
+   	  <h:commandLink action="#{albumController.delete(alb)}" value="Supprimer cet Album"/>
    </h:column>
    
 </h:dataTable>

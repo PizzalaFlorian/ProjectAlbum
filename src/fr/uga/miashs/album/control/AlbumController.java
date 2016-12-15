@@ -1,12 +1,14 @@
 package fr.uga.miashs.album.control;
 
 import java.util.List;
+import java.util.Set;
 
 import javax.enterprise.context.RequestScoped;
 import javax.inject.Inject;
 import javax.inject.Named;
 
 import fr.uga.miashs.album.model.Album;
+import fr.uga.miashs.album.model.Picture;
 import fr.uga.miashs.album.service.AlbumService;
 import fr.uga.miashs.album.service.ServiceException;
 import fr.uga.miashs.album.util.Pages;
@@ -60,7 +62,7 @@ public class AlbumController {
 	}
 	
 	public String getPictures(Album a){
-		a.getPictures();
+		Set<Picture> set = a.getPictures();
 		return Pages.list_album;
 	}
 }

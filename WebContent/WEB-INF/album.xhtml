@@ -8,8 +8,6 @@
 <h:head></h:head>
 <f:view>
 <h:body>
-	
-	<h1>AlbumList</h1>
 
 <h:form >
 
@@ -22,11 +20,6 @@
       <f:facet name="header">Description</f:facet>
       <h:outputText value="#{alb.description}"/> 
    </h:column>
-   
-   <h:column>
-      <f:facet name="header">Nombre de photos</f:facet>
-      <h:outputText value="#{albumController.getNumberPictures(alb)}"/> photo(s)
-   </h:column>
   
    <h:column>
    	  <h:commandLink action="#{albumController.getPicture(alb)}" value="Ouvrir"/>
@@ -38,7 +31,6 @@
 </h:dataTable>
 
 </h:form>
-	<a href="/ProjetAlbum/faces/add-album.xhtml">Ajouter un album</a>	
+
 </h:body>
-</f:view>
 </html>

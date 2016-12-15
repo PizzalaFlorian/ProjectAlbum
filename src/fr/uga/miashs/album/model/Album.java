@@ -81,4 +81,13 @@ public class Album {
 	public Set<Picture> getPictures() {
 		return pictures;
 	}
+	
+	//methode Perso
+	public void setPictures(Set<Picture> set){
+		this.pictures = set;
+	}
+
+	public int getNumberPictures() {
+		return this.pictures.size();
+	}
 }

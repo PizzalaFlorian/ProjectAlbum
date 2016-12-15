@@ -65,4 +65,13 @@ public class AlbumController {
 		Set<Picture> set = a.getPictures();
 		return Pages.list_album;
 	}
+	
+	public String setPictures(Album a,Set<Picture> set){
+		a.setPictures(set);
+		return Pages.list_album;
+	}
+	
+	public int getNumberPictures(Album a){
+		return a.getNumberPictures();
+	}
 }

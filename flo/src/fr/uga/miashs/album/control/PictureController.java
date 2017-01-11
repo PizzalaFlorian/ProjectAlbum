@@ -1,101 +1,60 @@
 package fr.uga.miashs.album.control;
 
-import java.awt.Graphics2D;
-import java.awt.Image;
-import java.awt.image.BufferedImage;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.OutputStream;
-import java.nio.file.Files;
 import java.nio.file.Path;
-import java.nio.file.Paths;
+import java.util.ArrayList;
+import java.util.List;
+import javax.annotation.PostConstruct;
+import javax.faces.bean.ManagedBean;
+import javax.inject.Inject;
 
-import javax.imageio.ImageIO;
-import javax.servlet.ServletException;
-import javax.servlet.annotation.WebServlet;
-import javax.servlet.http.HttpServlet;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
+import com.github.andrewoma.dexx.collection.HashSet;
+import com.github.andrewoma.dexx.collection.Set;
 
-/**
- * Servlet implementation class GetPicture
- */
-@WebServlet("/pictures/*")
-public class PictureController extends HttpServlet {
-	private static final long serialVersionUID = 1L;
+import fr.uga.miashs.album.model.Album;
+import fr.uga.miashs.album.model.Picture;
+import fr.uga.miashs.album.service.AlbumService;
 
-	/**
-	 * @see HttpServlet#HttpServlet()
-	 */
-	public PictureController() {
-		super();
-		// TODO Auto-generated constructor stub
-	}
-
-	/**
-	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse
-	 *      response)
-	 */
-	protected void doGet(HttpServletRequest request, HttpServletResponse response)
-			throws ServletException, IOException {
-		String pictureFile = request.getPathInfo();
-		Path rootDir = Paths.get(getServletContext().getInitParameter("directory"));
-
-		Path picturePath = rootDir.resolve(pictureFile.substring(1));
-
-		if (!Files.exists(picturePath)) {
-			response.sendError(HttpServletResponse.SC_NOT_FOUND);
-			return;
+public class PictureController {
+	
+	@Inject
+	private AppUserSession appUserSession;
+	
+	@Inject
+	private AlbumService albumService;
+	
+	
+	private Album album;
+	
+	//private List<Album> albums;
+	private Album selectedAlbum;
+	
+	
+	public Album getAlbum() {
+		if (album==null) {
+			album = new Album(appUserSession.getConnectedUser());
 		}
-
-		response.setContentType(getServletContext().getMimeType(picturePath.toString().toLowerCase()));
-
-		InputStream is = Files.newInputStream(picturePath);
-
-		String largeur = request.getParameter("largeur");
-		if (largeur != null) {
-			try {
-				int width = Integer.parseInt(largeur);
-				BufferedImage bim = ImageIO.read(is);
-				int height = (int) (bim.getHeight() * (((double) width) / bim.getWidth()));
-				Image resizedImg = bim.getScaledInstance(width, height, Image.SCALE_FAST);
-				BufferedImage rBimg = new BufferedImage(width, height, bim.getType());
-				// Create Graphics object
-				Graphics2D g = rBimg.createGraphics();
-
-				// Draw the resizedImg from 0,0 with no ImageObserver
-				g.drawImage(resizedImg, 0, 0, null);
-
-				// Dispose the Graphics object, we no longer need it
-				g.dispose();
-
-				ImageIO.write(rBimg, "png", response.getOutputStream());
-
-			} catch (NumberFormatException e) {
-				e.printStackTrace();
-			}
-		} else {
-
-			OutputStream os = response.getOutputStream();
-
-			byte[] buf = new byte[4 * 1024];
-			int read = 0;
-			while ((read = is.read(buf)) != -1) {
-				os.write(buf, 0, read);
-			}
-			is.close();
-		}
-
+		return album;
 	}
-
-	/**
-	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse
-	 *      response)
-	 */
-	protected void doPost(HttpServletRequest request, HttpServletResponse response)
-			throws ServletException, IOException {
-		// TODO Auto-generated method stub
-		doGet(request, response);
+	
+	private List<Picture> pictures;
+	
+	
+	private List<Path> photos;
+	    
+	@PostConstruct
+	public void init() {
+		System.out.println("start init");
+		pictures = (List<Picture>) album.getPictures();
+		System.out.println();
+	    photos = new ArrayList<Path>();
+	    //pictures.forEach(p -> photos.add(p.getLocalfile()));
 	}
-
+	
+	public List<Path> getPhotos() {
+	    return photos;
+	}
+	
+	public Album getAlbumById(long albumId) {
+        return albumService.getAlbumById(albumId);
+    }
 }

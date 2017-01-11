@@ -22,4 +22,10 @@ public class AlbumService extends JpaService<Long,Album> {
 		return query.getResultList();
 	}
 	
+	public Album getAlbumById(long id) {
+        Query query = getEm().createNamedQuery("Album.findById");
+        query.setParameter("id", id);
+        return (Album) query.getSingleResult();
+    }
+	
 }

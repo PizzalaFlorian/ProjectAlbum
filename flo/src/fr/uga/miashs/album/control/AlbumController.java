@@ -29,6 +29,7 @@ import javax.servlet.http.Part;
 import fr.uga.miashs.album.model.Album;
 import fr.uga.miashs.album.model.Picture;
 import fr.uga.miashs.album.service.AlbumService;
+import fr.uga.miashs.album.service.PictureService;
 import fr.uga.miashs.album.service.ServiceException;
 import fr.uga.miashs.album.util.Pages;
 
@@ -41,6 +42,7 @@ public class AlbumController {
 	
 	@Inject
 	private AlbumService albumService;
+	private PictureService pictureService;
 
 	
 	private Album album;
@@ -81,13 +83,15 @@ public class AlbumController {
 		return null;
 	}
 	
+	public Album getAlbumById(long albumId) {
+        return albumService.getAlbumById(albumId);
+    }
 	
-	
-	
-	
-	
-	
-	
+	public List<Picture> getAlbumPictureById(long albumId) throws ServiceException{
+		Album a = getAlbumById(albumId);
+		return pictureService.listPictureByAlbum(a);
+	}
+		
 	private Part zip;
 	
 	public Part getZip() {

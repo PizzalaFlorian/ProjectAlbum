@@ -7,7 +7,7 @@
 <h:head></h:head>
 <h:body>
 
-	<h:form>
+	<h:form enctype="multipart/form-data">
 		<h:outputLabel for="titre" value="Titre : " />
 		<h:inputText id="titre" value="#{albumController.album.title}" 
 			title="Renseignez le titre de l'album"/>
@@ -18,7 +18,12 @@
 			title="Donnez une description de l'album"/>
 			<!-- validator="#{ajoutAlbum.validerZip}"  -->
 		<br/>
-		
+		<h:outputLabel for="Photos" value="Ajoutez vos images : " />
+		<h:inputFile value="#{albumController.pictures}">
+			 <f:ajax listener="#{albumController.savePic}" />
+		</h:inputFile>
+<!-- 		<input type="file" name="Photos" size="50" multiple="multiple"/> -->
+		<br/>
 		<h:commandButton action="#{albumController.createAlbum()}" value="Créer l'album"/>
 		<a href="/ProjetAlbum/faces/list-album.xhtml">Annuler</a>
 	</h:form>

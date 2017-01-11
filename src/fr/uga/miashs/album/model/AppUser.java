@@ -17,6 +17,7 @@ import javax.validation.constraints.Pattern;
 
 @Entity
 @NamedQueries({
+	@NamedQuery(name="AppUser.findById", query="SELECT a FROM AppUser a WHERE a.id=:id"),
     @NamedQuery(name="AppUser.findAll",query="SELECT u FROM AppUser u"),
     @NamedQuery(name="AppUser.login", query="SELECT u FROM AppUser u WHERE u.email=:email AND u.password=:password")
 })

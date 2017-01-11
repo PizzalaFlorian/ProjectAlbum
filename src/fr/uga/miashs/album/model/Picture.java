@@ -8,9 +8,15 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.ManyToOne;
+import javax.persistence.NamedQueries;
+import javax.persistence.NamedQuery;
 import javax.validation.constraints.NotNull;
 
 @Entity
+@NamedQueries({
+        @NamedQuery(name="Picture.findByAlbum", query="SELECT p FROM Picture p WHERE p.album=:album"),
+        @NamedQuery(name="Picture.findById", query="SELECT p FROM Picture p WHERE p.id=:id")
+})
 public class Picture {
 
 	@Id
@@ -29,5 +35,49 @@ public class Picture {
 	@NotNull
 	private Path localfile;
 	
-	
+	public Picture() {
+        this.album = null;
+        this.title = null;
+        this.uri = null;
+        this.localfile = null;
+    }
+
+    public Picture(Album album, String title, URI uri, Path localfile, Integer height, Integer width) {
+        this.album = album;
+        this.title = title;
+        this.uri = uri;
+        this.localfile = localfile;
+    }
+
+    public Album getAlbum() {
+        return album;
+    }
+
+    public void setAlbum(Album album) {
+        this.album = album;
+    }
+
+    public String getTitle() {
+        return title;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
+    }
+
+    public URI getUri() {
+        return uri;
+    }
+
+    public void setUri(URI uri) {
+        this.uri = uri;
+    }
+
+    public Path getLocalfile() {
+        return localfile;
+    }
+
+    public void setLocalfile(Path localfile) {
+        this.localfile = localfile;
+    }
 }

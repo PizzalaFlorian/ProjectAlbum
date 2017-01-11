@@ -15,6 +15,7 @@ import java.util.zip.ZipInputStream;
 import java.net.URI;
 import java.net.URISyntaxException;
 
+import javax.annotation.PostConstruct;
 import javax.enterprise.context.RequestScoped;
 import javax.faces.application.FacesMessage;
 import javax.faces.component.UIComponent;
@@ -24,7 +25,8 @@ import javax.inject.Inject;
 import javax.inject.Named;
 import javax.servlet.http.Part;
 
-
+import com.github.andrewoma.dexx.collection.HashSet;
+import com.github.andrewoma.dexx.collection.Set;
 
 import fr.uga.miashs.album.model.Album;
 import fr.uga.miashs.album.model.Picture;
@@ -80,13 +82,6 @@ public class AlbumController {
 		}
 		return null;
 	}
-	
-	
-	
-	
-	
-	
-	
 	
 	private Part zip;
 	
@@ -197,6 +192,9 @@ public class AlbumController {
 		album.addPicture(picture);
 	}
 	
+	public Album getAlbumById(long albumId) {
+        return albumService.getAlbumById(albumId);
+    }
 
     public Album getSelectedAlbum() {
         return selectedAlbum;
@@ -205,4 +203,18 @@ public class AlbumController {
     public void setSelectedAlbum(Album selectedAlbum) {
         this.selectedAlbum = selectedAlbum;
     }
+	
+	private List<Path> photos;
+	    
+	public List<Path> getPhotos(HashSet<Picture> pictures) {
+		System.out.println("start init");
+		List<Picture> listPictures = (List<Picture>) pictures;
+	    photos = new ArrayList<Path>();
+	    listPictures.forEach(p -> photos.add(p.getLocalfile()));
+	    return photos;
+	}
+	
+	public List<Path> getPhotos() {
+	    return photos;
+	}
 }

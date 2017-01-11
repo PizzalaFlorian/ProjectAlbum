@@ -47,10 +47,14 @@ public class PictureController {
 		pictures = (List<Picture>) album.getPictures();
 		System.out.println();
 	    photos = new ArrayList<Path>();
-	    pictures.forEach(p -> photos.add(p.getLocalfile()));
+	    //pictures.forEach(p -> photos.add(p.getLocalfile()));
 	}
 	
 	public List<Path> getPhotos() {
 	    return photos;
 	}
+	
+	public Album getAlbumById(long albumId) {
+        return albumService.getAlbumById(albumId);
+    }
 }

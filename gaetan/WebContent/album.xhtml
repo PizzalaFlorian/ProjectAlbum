@@ -11,14 +11,38 @@
 </h:head>
 
 <f:view>
-<f:metadata>
-	<f:viewParam name="title" value="#{album.title}"/>
-</f:metadata>
-<h:body>
 
-<!-- 	<p:contentFlow value="#{PictureController.photos}" var="photo"> -->
-<!-- 	    <p:graphicImage name="#{photo}" styleClass="content" /> -->
-<!-- 	</p:contentFlow> -->
+<h:body>
+	<h1>#{request.getParameter(id)}</h1>
+<h:form>
+
+<h:dataTable value='#{albumController.getAlbumById(request.getParameter("id"))}' var="album" >
+   <h:column>    				
+     <f:facet name="header">Titre</f:facet> 
+		<h:outputText value="#{album.title}"/>		
+   </h:column>
+    <h:column>    				
+     <f:facet name="header">Description</f:facet> 
+		<h:outputText value="#{album.description}"/>		
+   </h:column>
+   <h:column>    				
+     <f:facet name="header">Pictures</f:facet> 
+     <h:outputText value="#{album.pictures.toArray()[0]}"/>
+     <p>#{album.pictures.toArray()[0].getLocalfile().toString()}</p>
+     <h:graphicImage url="#{album.pictures.toArray()[0].getLocalfile().toString()}"  />
+     <img src="#{album.pictures.toArray()[0].getLocalfile().toString()}"></img>
+				
+   </h:column>
+
+   <!-- 
+   <h:column>
+      <h:commandLink action="#{appUserController.delete(user.id)}" value="delete"/>
+   </h:column>
+   -->
+</h:dataTable>
+
+</h:form>
+
 	
 </h:body>
 </f:view>

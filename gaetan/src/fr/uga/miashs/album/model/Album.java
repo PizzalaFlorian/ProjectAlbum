@@ -25,6 +25,7 @@ import javax.validation.constraints.NotNull;
 @NamedQueries({
     @NamedQuery(name="Album.findAllOwned",
                 query="SELECT a FROM Album a WHERE a.owner=:owner"),
+    @NamedQuery(name="Album.findById", query="SELECT a FROM Album a WHERE a.id=:id"),
 })
 public class Album {
 	
@@ -45,7 +46,7 @@ public class Album {
 	private Set<AppUser> sharedWith;
 	
 	@OneToMany(mappedBy="album")
-	private Set<Picture> pictures = new HashSet<Picture>();
+	private Set<Picture> pictures = new HashSet<Picture>();;
 	
 	
 	// private List<String> picturesPath;
@@ -106,13 +107,6 @@ public class Album {
 	}
 	
 	public void addPicture(Picture picture){
-		System.out.println(picture.getAlbum());
-		System.out.println(picture.getTitle());
-		System.out.println(picture.getLocalfile());
-		System.out.println(picture.getUri());
-		System.out.println(picture);
-		System.out.println(this.pictures);
-		this.pictures.add(picture);
-		
+		this.pictures.add(picture);	
 	}
 }

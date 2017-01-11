@@ -21,7 +21,7 @@
    <h:column>    				
      <f:facet name="header">Titre</f:facet> 
      	<h:outputLink value="album.xhtml">
-     		<f:param name="title" value="${alb}"/>
+     		<f:param name="id" value="${album.id}"/>
 			<h:outputText value="#{album.title}"/>
 		</h:outputLink>			
    </h:column>

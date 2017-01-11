@@ -47,7 +47,7 @@ public class AppUserSession implements Serializable {
 			facesContext.addMessage(null, facesMessage);
 			return null;
 		}
-		return Pages.list_album;
+		return Pages.add_album;
 	}
 	
 	public String goToAdd(){

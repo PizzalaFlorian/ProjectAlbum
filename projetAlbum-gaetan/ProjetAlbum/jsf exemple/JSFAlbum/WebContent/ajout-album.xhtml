@@ -1,0 +1,28 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" 
+	xmlns:f="http://java.sun.com/jsf/core" 
+	xmlns:h="http://java.sun.com/jsf/html">
+
+<h:body>
+
+	<h:form enctype="multipart/form-data">
+		<h:outputLabel for="nomalbum" value="Nom de l'album" />
+		<h:inputText id="nomalbum" value="#{ajoutAlbum.nomAlbum}" 
+			title="Renseignez le nom de l'album"
+			required="true" requiredMessage="Il faut donner un nom à l'album"
+			validator="#{ajoutAlbum.validerNomAlbum}"/>
+		<br/>
+		<h:outputLabel for="zip" value="Fichier zip avec photos" />
+		<h:inputFile id="zip" value="#{ajoutAlbum.zip}" 
+			validator="#{ajoutAlbum.validerZip}" 
+			title="Choisissez un fichier zip avec des images"
+			required="true" requiredMessage="Il faut choisir un fichier"/>
+			
+		<br/>
+		<h:commandButton action="#{ajoutAlbum.creerAlbum()}" value="Créer l'album"/>
+	</h:form>
+	
+</h:body>
+
+</html>

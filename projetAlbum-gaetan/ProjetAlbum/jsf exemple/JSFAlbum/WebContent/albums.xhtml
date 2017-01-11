@@ -1,0 +1,24 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" 
+	xmlns:f="http://java.sun.com/jsf/core" 
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:c="http://java.sun.com/jsp/jstl/core">
+
+<f:view>
+<h:body>
+	
+	<h1>Liste des Albums</h1>
+	
+	<c:forEach var="alb" items="${listeAlbums.albums}">
+		<p>
+		<h:outputLink value="album.xhtml">
+			<f:param name="nomAlbum" value="${alb}"/>
+			<h:outputText value="${alb}"/>
+		</h:outputLink>
+		</p>
+	</c:forEach>
+	
+</h:body>
+</f:view>
+</html>

@@ -4,6 +4,8 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.net.URI;
+import java.util.ArrayList;
+import java.util.List;
 
 import org.apache.jena.query.*;
 import org.apache.jena.rdf.model.*;
@@ -11,39 +13,6 @@ import org.apache.jena.update.*;
 import org.apache.openejb.jee.oejb2.EjbRelationshipRoleType.RelationshipRoleSource;
 
 public class PictureAnnotationService {
-
-	public void insertTriplet(URI sujet, String predicat, URI objet ){
-		// SPARQL Update
-		UpdateRequest request = UpdateFactory.create("PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>"+"PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>"+
-													"INSERT DATA {"+ sujet.toString()+" "+predicat+" "+objet.toString()+". ");
-		UpdateProcessor up = UpdateExecutionFactory.createRemote(request, "http://localhost:3030/ALBUM/update");
-		up.execute();
-	}
-	
-	public void insertTriplet(URI sujet, String predicat, String objet ){
-		// SPARQL Update
-		UpdateRequest request = UpdateFactory.create("PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>"+"PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>"+
-													"INSERT DATA {"+ sujet.toString()+" "+predicat+" "+objet+". ");
-		UpdateProcessor up = UpdateExecutionFactory.createRemote(request, "http://localhost:3030/ALBUM/update");
-		up.execute();
-	}
-	
-	//TODO fini query
-	public void query(){
-		// SPARQL Query
-		Query query = QueryFactory.create("SELECT ?s  WHERE {?s a <http://imss.univ-grenoble-alpes.fr/ns/album#Picture>.}");
-		  try (QueryExecution qexec = QueryExecutionFactory.sparqlService("http://localhost:3030/ALBUM/sparql",query)) {
-		    ResultSet results = qexec.execSelect() ;
-		    for ( ; results.hasNext() ; )
-		    {
-		      QuerySolution soln = results.nextSolution() ;
-		      RDFNode x = soln.get("s") ;       // Get a result variable by name.
-		      Resource r = soln.getResource("p") ; // Get a result variable - must be a resource
-		      Literal l = soln.getLiteral("o") ;   // Get a result variable - must be a literal
-		      System.out.println(x+" "+r+" "+l);
-		    }
-		  }
-	}
 	
 	/*Custom methode*/
 	public static void insertManualTriplet(URI sujet, String predicat, URI objet ){
@@ -77,6 +46,23 @@ public class PictureAnnotationService {
 			RDFNode x = soln.get("x");
 			System.out.println(x);
 		}
+	}
+	
+	public static ArrayList<String> execSelectAndReturnUris(String query,String selector){
+		ArrayList<String> list = new ArrayList<String>();
+		String serviceURI = "http://localhost:3030/ALBUM";
+		QueryExecution q = QueryExecutionFactory.sparqlService(serviceURI,
+				query);
+		ResultSet results = q.execSelect();
+
+		//ResultSetFormatter.out(System.out, results);
+
+		while (results.hasNext()) {
+			QuerySolution soln = results.nextSolution();
+			RDFNode x = soln.get(selector);
+			list.add(x.toString());
+		}
+		return list;
 	}
 
 	public static void execSelectAndProcess(String query) {

@@ -27,7 +27,6 @@
                 <p:graphicImage value="#{picture.localfile}" width="128"/> 
                 <h:outputText value="#{picture.title}" />
                 <p:commandButton action="#{pictureController.deletePictureById(picture.id)}" value="#{picture.id}"/> 
-		    	<h:commandButton action="#{pictureController.annotePictureToPhoto(picture.uri)}" value="Annoter cette fucking image"></h:commandButton> 
                 <p:commandButton oncomplete="PF('pictureDialog').show()" icon="ui-icon-search">
                     <f:setPropertyActionListener value="#{picture}" target="#{pictureController.selectedPicture}" />
                 </p:commandButton>
@@ -39,18 +38,28 @@
     <p:dialog header="Photo Info" widgetVar="pictureDialog" modal="true" showEffect="fade" hideEffect="fade" resizable="false">
         <p:outputPanel style="text-align:center;">
             <p:panelGrid  columns="2" rendered="#{not empty pictureController.selectedPicture}" columnClasses="label,value">
- 
-                <h:outputText value="Id:" />
-                <h:outputText value="#{pictureController.selectedPicture.id}" />
- 
-                <h:outputText value="Nom" />
-                <h:outputText value="#{pictureController.selectedPicture.title}" />
- 
-                <h:outputText value="URI" />
-                <h:outputText value="#{pictureController.selectedPicture.uri}" />
- 
-                <h:outputText value="Path" />
-                <h:outputText value="#{pictureController.selectedPicture.localfile}" />
+            <h:form>
+            	 <h:outputText value="uri:" />
+                <input name="#{annote.picUri}" value="#{pictureController.selectedPicture.uri}" />
+				<br/>
+				 <h:outputText value="Type photo:" />
+				<h:selectOneMenu name="#{annote.type}">
+				   	<f:selectItem itemValue="photo" itemLabel="Photo" />
+				   	<f:selectItem itemValue="natureMorte" itemLabel="Photo - Nature Morte" />
+					<f:selectItem itemValue="paysage" itemLabel="Photo - Paysage" />
+					<f:selectItem itemValue="panorama" itemLabel="Photo - Panorama" />
+					<f:selectItem itemValue="photoAbstraite" itemLabel="Photo - Photo Abstraite" />
+					<f:selectItem itemValue="photoArt" itemLabel="Photo - Photo d'Art" />
+					<f:selectItem itemValue="photoSport" itemLabel="Photo - Photo de Sport" />
+					<f:selectItem itemValue="portrait" itemLabel="Photo - Portrait" />
+					<f:selectItem itemValue="selfie" itemLabel="Photo - Selfie" />
+				</h:selectOneMenu>
+				<br/>
+				<h:commandButton value="Submit" action="annotePictureController.annotePictureByForm()" />
+	        	<h:commandButton value="Reset" type="reset" />
+            </h:form>
+               
+              
             </p:panelGrid>
         </p:outputPanel>
     </p:dialog>

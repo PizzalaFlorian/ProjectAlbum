@@ -1,0 +1,2950 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/Projet/AlbumPhoto.owl#"
+     xml:base="http://www.semanticweb.org/Projet/AlbumPhoto.owl"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:ns="http://www.w3.org/2003/06/sw-vocab-status/ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:prov="http://www.w3.org/ns/prov#"
+     xmlns:wot="http://xmlns.com/wot/0.1/"
+     xmlns:ontology="http://dbpedia.org/ontology/"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/Projet/AlbumPhoto.owl">
+        <owl:imports rdf:resource="http://xmlns.com/foaf/0.1/"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://dbpedia.org/ontology/altitude -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/altitude">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Place"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/annualTemperature -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/annualTemperature">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Place"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/areaCode -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/areaCode">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Place"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/areaDate -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/areaDate">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Place"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/areaLand -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/areaLand">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Place"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/areaOfCatchmentQuote -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/areaOfCatchmentQuote">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Place"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/areaQuote -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/areaQuote">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Place"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/areaRank -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/areaRank">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Place"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/areaTotal -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/areaTotal">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Place"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/areaWater -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/areaWater">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Place"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/artificialSnowArea -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/artificialSnowArea">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Place"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/authorityMandate -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/authorityMandate">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Place"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/averageDepth -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/averageDepth">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Place"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/averageDepthQuote -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/averageDepthQuote">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Place"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/avifaunaPopulation -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/avifaunaPopulation">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Place"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/biggestCity -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/biggestCity">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Place"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/bioclimate -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/bioclimate">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Place"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/bird -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/bird">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Place"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/blackLongDistancePisteNumber -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/blackLongDistancePisteNumber">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Place"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/blackSkiPisteNumber -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/blackSkiPisteNumber">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Place"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/blueLongDistancePisteNumber -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/blueLongDistancePisteNumber">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Place"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/blueSkiPisteNumber -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/blueSkiPisteNumber">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Place"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/breeder -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/breeder">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Animal"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/budgetYear -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/budgetYear">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Place"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/cableCar -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/cableCar">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Place"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/cannonNumber -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/cannonNumber">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Place"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/capitalCoordinates -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/capitalCoordinates">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Place"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/cityLink -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/cityLink">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Place"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/climate -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/climate">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Place"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/climbUpNumber -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/climbUpNumber">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Place"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/coastLength -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/coastLength">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Place"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/codeLandRegistry -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/codeLandRegistry">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Place"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/codeMunicipalMonument -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/codeMunicipalMonument">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Place"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/codeNationalMonument -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/codeNationalMonument">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Place"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/codeProvincialMonument -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/codeProvincialMonument">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Place"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/currencyCode -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/currencyCode">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Place"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/dateAgreement -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/dateAgreement">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Place"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/daylightSavingTimeZone -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/daylightSavingTimeZone">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Place"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/depth -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/depth">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Place"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/depthQuote -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/depthQuote">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Place"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/depths -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/depths">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Place"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/different -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/different">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Place"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/district -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/district">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Place"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/elevation -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/elevation">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Place"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/elevationQuote -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/elevationQuote">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Place"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/endangeredSince -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/endangeredSince">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Place"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/eventDate -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/eventDate">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Place"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/fauna -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/fauna">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Place"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/flora -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/flora">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Place"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/flower -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/flower">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Place"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/foalDate -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/foalDate">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Animal"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/foresterDistrict -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/foresterDistrict">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Place"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/frontierLength -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/frontierLength">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Place"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/geolocDual -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/geolocDual">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Place"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/geologicPeriod -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/geologicPeriod">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Place"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/governingBody -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/governingBody">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Place"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/greenLongDistancePisteNumber -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/greenLongDistancePisteNumber">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Place"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/greenSkiPisteNumber -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/greenSkiPisteNumber">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Place"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/gridReference -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/gridReference">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Place"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/grossDomesticProductPerPeople -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/grossDomesticProductPerPeople">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Place"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/grossDomesticProductRank -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/grossDomesticProductRank">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Place"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/heritageRegister -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/heritageRegister">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Place"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/historicalMap -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/historicalMap">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Place"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/historicalName -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/historicalName">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Place"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/humanDevelopmentIndexRank -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/humanDevelopmentIndexRank">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Place"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/information -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/information">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Place"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/informationName -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/informationName">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Place"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/isRouteStop -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/isRouteStop">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Place"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/iso31661Code -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/iso31661Code">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Place"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/isoCode -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/isoCode">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Place"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/kindOfCoordinate -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/kindOfCoordinate">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Place"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/kindOfRock -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/kindOfRock">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Place"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/lake -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/lake">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Place"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/landArea -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/landArea">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Place"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/landPercentage -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/landPercentage">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Place"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/lawCountry -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/lawCountry">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Place"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/lengthQuote -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/lengthQuote">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Place"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/limit -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/limit">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Place"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/linkedSpace -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/linkedSpace">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Place"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/longDistancePisteKilometre -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/longDistancePisteKilometre">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Place"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/longDistancePisteNumber -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/longDistancePisteNumber">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Place"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/lowest -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/lowest">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Place"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/map -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/map">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Place"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/mapCaption -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/mapCaption">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Place"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/mapDescription -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/mapDescription">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Place"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/maximumArea -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/maximumArea">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Place"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/maximumAreaQuote -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/maximumAreaQuote">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Place"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/maximumDepth -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/maximumDepth">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Place"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/maximumDepthQuote -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/maximumDepthQuote">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Place"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/maximumElevation -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/maximumElevation">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Place"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/mayorArticle -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/mayorArticle">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Place"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/mergerDate -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/mergerDate">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Place"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/minimumArea -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/minimumArea">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Place"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/minimumAreaQuote -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/minimumAreaQuote">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Place"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/minimumElevation -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/minimumElevation">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Place"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/municipalityCode -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/municipalityCode">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Place"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/nationalTopographicSystemMapNumber -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/nationalTopographicSystemMapNumber">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Place"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/nearestCity -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/nearestCity">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Place"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/neighbourRegion -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/neighbourRegion">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Place"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/numberOfIsland -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/numberOfIsland">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Place"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/nutsCode -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/nutsCode">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Place"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/output -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/output">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Place"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/parliament -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/parliament">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Place"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/parliamentType -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/parliamentType">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Place"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/perimeter -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/perimeter">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Place"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/pisciculturalPopulation -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/pisciculturalPopulation">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Place"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/plant -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/plant">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Place"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/politicalLeader -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/politicalLeader">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Place"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/populationDate -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/populationDate">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Place"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/populationQuote -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/populationQuote">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Place"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/presidentGeneralCouncilMandate -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/presidentGeneralCouncilMandate">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Place"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/presidentRegionalCouncilMandate -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/presidentRegionalCouncilMandate">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Place"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/protectionStatus -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/protectionStatus">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Place"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/province -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/province">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Place"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/provinceLink -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/provinceLink">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Place"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/quote -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/quote">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Place"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/rankAgreement -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/rankAgreement">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Place"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/redLongDistancePisteNumber -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/redLongDistancePisteNumber">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Place"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/redSkiPisteNumber -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/redSkiPisteNumber">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Place"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/refcul -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/refcul">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Place"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/refgen -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/refgen">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Place"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/refgeo -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/refgeo">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Place"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/refpol -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/refpol">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Place"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/regency -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/regency">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Place"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/regionLink -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/regionLink">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Place"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/regionType -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/regionType">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Place"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/regionalPrefecture -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/regionalPrefecture">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Place"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/relatedPlaces -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/relatedPlaces">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Place"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/relief -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/relief">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Place"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/representative -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/representative">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Place"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/retentionTime -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/retentionTime">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Place"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/river -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/river">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Place"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/route -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/route">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Place"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/scale -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/scale">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Place"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/sea -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/sea">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Place"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/settlement -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/settlement">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Place"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/skiLift -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/skiLift">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Place"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/skiPisteKilometre -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/skiPisteKilometre">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Place"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/skiPisteNumber -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/skiPisteNumber">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Place"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/skiTow -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/skiTow">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Place"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/snowParkNumber -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/snowParkNumber">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Place"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/sovereignCountry -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/sovereignCountry">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Place"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/statusYear -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/statusYear">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Place"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/subPrefecture -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/subPrefecture">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Place"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/subdivisionLink -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/subdivisionLink">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Place"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/subdivisions -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/subdivisions">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Place"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/subsystem -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/subsystem">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Place"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/subsystemLink -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/subsystemLink">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Place"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/timeZone -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/timeZone">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Place"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/tree -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/tree">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Place"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/tu -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/tu">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Place"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/typeCoordinate -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/typeCoordinate">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Place"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/unesco -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/unesco">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Place"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/unloCode -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/unloCode">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Place"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/utcOffset -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/utcOffset">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Place"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/vehicleCode -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/vehicleCode">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Place"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/volumeQuote -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/volumeQuote">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Place"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/water -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/water">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Place"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/waterArea -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/waterArea">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Place"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/waterPercentage -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/waterPercentage">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Place"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/wholeArea -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/wholeArea">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Place"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/widthQuote -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/widthQuote">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Place"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/yearOfConstruction -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/yearOfConstruction">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Place"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#wasDerivedFrom -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/prov#wasDerivedFrom"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://dbpedia.org/ontology/administrativeCenter -->
+
+    <owl:ObjectProperty rdf:about="http://dbpedia.org/ontology/administrativeCenter">
+        <rdfs:range rdf:resource="http://dbpedia.org/ontology/Place"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/animal -->
+
+    <owl:ObjectProperty rdf:about="http://dbpedia.org/ontology/animal">
+        <rdfs:range rdf:resource="http://dbpedia.org/ontology/Animal"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/announcedFrom -->
+
+    <owl:ObjectProperty rdf:about="http://dbpedia.org/ontology/announcedFrom">
+        <rdfs:range rdf:resource="http://dbpedia.org/ontology/Place"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/birthPlace -->
+
+    <owl:ObjectProperty rdf:about="http://dbpedia.org/ontology/birthPlace">
+        <rdfs:range rdf:resource="http://dbpedia.org/ontology/Place"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/bodyDiscovered -->
+
+    <owl:ObjectProperty rdf:about="http://dbpedia.org/ontology/bodyDiscovered">
+        <rdfs:range rdf:resource="http://dbpedia.org/ontology/Place"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/closeTo -->
+
+    <owl:ObjectProperty rdf:about="http://dbpedia.org/ontology/closeTo">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Place"/>
+        <rdfs:range rdf:resource="http://dbpedia.org/ontology/Place"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/daira -->
+
+    <owl:ObjectProperty rdf:about="http://dbpedia.org/ontology/daira">
+        <rdfs:range rdf:resource="http://dbpedia.org/ontology/Place"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/dam -->
+
+    <owl:ObjectProperty rdf:about="http://dbpedia.org/ontology/dam">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Animal"/>
+        <rdfs:range rdf:resource="http://dbpedia.org/ontology/Animal"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/damsire -->
+
+    <owl:ObjectProperty rdf:about="http://dbpedia.org/ontology/damsire">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Animal"/>
+        <rdfs:range rdf:resource="http://dbpedia.org/ontology/Animal"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/deathPlace -->
+
+    <owl:ObjectProperty rdf:about="http://dbpedia.org/ontology/deathPlace">
+        <rdfs:range rdf:resource="http://dbpedia.org/ontology/Place"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/eastPlace -->
+
+    <owl:ObjectProperty rdf:about="http://dbpedia.org/ontology/eastPlace">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Place"/>
+        <rdfs:range rdf:resource="http://dbpedia.org/ontology/Place"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/educationPlace -->
+
+    <owl:ObjectProperty rdf:about="http://dbpedia.org/ontology/educationPlace">
+        <rdfs:range rdf:resource="http://dbpedia.org/ontology/Place"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/endPoint -->
+
+    <owl:ObjectProperty rdf:about="http://dbpedia.org/ontology/endPoint">
+        <rdfs:range rdf:resource="http://dbpedia.org/ontology/Place"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/grandsire -->
+
+    <owl:ObjectProperty rdf:about="http://dbpedia.org/ontology/grandsire">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Animal"/>
+        <rdfs:range rdf:resource="http://dbpedia.org/ontology/Animal"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/ground -->
+
+    <owl:ObjectProperty rdf:about="http://dbpedia.org/ontology/ground">
+        <rdfs:range rdf:resource="http://dbpedia.org/ontology/Place"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/hasInsidePlace -->
+
+    <owl:ObjectProperty rdf:about="http://dbpedia.org/ontology/hasInsidePlace">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Place"/>
+        <rdfs:range rdf:resource="http://dbpedia.org/ontology/Place"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/hasOutsidePlace -->
+
+    <owl:ObjectProperty rdf:about="http://dbpedia.org/ontology/hasOutsidePlace">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Place"/>
+        <rdfs:range rdf:resource="http://dbpedia.org/ontology/Place"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/highestPoint -->
+
+    <owl:ObjectProperty rdf:about="http://dbpedia.org/ontology/highestPoint">
+        <rdfs:range rdf:resource="http://dbpedia.org/ontology/Place"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/homeport -->
+
+    <owl:ObjectProperty rdf:about="http://dbpedia.org/ontology/homeport">
+        <rdfs:range rdf:resource="http://dbpedia.org/ontology/Place"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/land -->
+
+    <owl:ObjectProperty rdf:about="http://dbpedia.org/ontology/land">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Place"/>
+        <rdfs:range rdf:resource="http://dbpedia.org/ontology/Place"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/linkedTo -->
+
+    <owl:ObjectProperty rdf:about="http://dbpedia.org/ontology/linkedTo">
+        <rdfs:range rdf:resource="http://dbpedia.org/ontology/Place"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/livingPlace -->
+
+    <owl:ObjectProperty rdf:about="http://dbpedia.org/ontology/livingPlace">
+        <rdfs:range rdf:resource="http://dbpedia.org/ontology/Place"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/locatedInArea -->
+
+    <owl:ObjectProperty rdf:about="http://dbpedia.org/ontology/locatedInArea">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Place"/>
+        <rdfs:range rdf:resource="http://dbpedia.org/ontology/Place"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/location -->
+
+    <owl:ObjectProperty rdf:about="http://dbpedia.org/ontology/location">
+        <rdfs:range rdf:resource="http://dbpedia.org/ontology/Place"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/lowestPoint -->
+
+    <owl:ObjectProperty rdf:about="http://dbpedia.org/ontology/lowestPoint">
+        <rdfs:range rdf:resource="http://dbpedia.org/ontology/Place"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/mainIsland -->
+
+    <owl:ObjectProperty rdf:about="http://dbpedia.org/ontology/mainIsland">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Place"/>
+        <rdfs:range rdf:resource="http://dbpedia.org/ontology/Place"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/massif -->
+
+    <owl:ObjectProperty rdf:about="http://dbpedia.org/ontology/massif">
+        <rdfs:range rdf:resource="http://dbpedia.org/ontology/Place"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/mostDownPoint -->
+
+    <owl:ObjectProperty rdf:about="http://dbpedia.org/ontology/mostDownPoint">
+        <rdfs:range rdf:resource="http://dbpedia.org/ontology/Place"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/namedByLanguage -->
+
+    <owl:ObjectProperty rdf:about="http://dbpedia.org/ontology/namedByLanguage">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Place"/>
+        <rdfs:range rdf:resource="http://dbpedia.org/ontology/Place"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/nextEntity -->
+
+    <owl:ObjectProperty rdf:about="http://dbpedia.org/ontology/nextEntity">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Place"/>
+        <rdfs:range rdf:resource="http://dbpedia.org/ontology/Place"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/northEastPlace -->
+
+    <owl:ObjectProperty rdf:about="http://dbpedia.org/ontology/northEastPlace">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Place"/>
+        <rdfs:range rdf:resource="http://dbpedia.org/ontology/Place"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/northPlace -->
+
+    <owl:ObjectProperty rdf:about="http://dbpedia.org/ontology/northPlace">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Place"/>
+        <rdfs:range rdf:resource="http://dbpedia.org/ontology/Place"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/northWestPlace -->
+
+    <owl:ObjectProperty rdf:about="http://dbpedia.org/ontology/northWestPlace">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Place"/>
+        <rdfs:range rdf:resource="http://dbpedia.org/ontology/Place"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/originalEndPoint -->
+
+    <owl:ObjectProperty rdf:about="http://dbpedia.org/ontology/originalEndPoint">
+        <rdfs:range rdf:resource="http://dbpedia.org/ontology/Place"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/originalStartPoint -->
+
+    <owl:ObjectProperty rdf:about="http://dbpedia.org/ontology/originalStartPoint">
+        <rdfs:range rdf:resource="http://dbpedia.org/ontology/Place"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/part -->
+
+    <owl:ObjectProperty rdf:about="http://dbpedia.org/ontology/part">
+        <rdfs:range rdf:resource="http://dbpedia.org/ontology/Place"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/placeOfBurial -->
+
+    <owl:ObjectProperty rdf:about="http://dbpedia.org/ontology/placeOfBurial">
+        <rdfs:range rdf:resource="http://dbpedia.org/ontology/Place"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/previousEntity -->
+
+    <owl:ObjectProperty rdf:about="http://dbpedia.org/ontology/previousEntity">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Place"/>
+        <rdfs:range rdf:resource="http://dbpedia.org/ontology/Place"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/region -->
+
+    <owl:ObjectProperty rdf:about="http://dbpedia.org/ontology/region">
+        <rdfs:range rdf:resource="http://dbpedia.org/ontology/Place"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/regionServed -->
+
+    <owl:ObjectProperty rdf:about="http://dbpedia.org/ontology/regionServed">
+        <rdfs:range rdf:resource="http://dbpedia.org/ontology/Place"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/releaseLocation -->
+
+    <owl:ObjectProperty rdf:about="http://dbpedia.org/ontology/releaseLocation">
+        <rdfs:range rdf:resource="http://dbpedia.org/ontology/Place"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/residence -->
+
+    <owl:ObjectProperty rdf:about="http://dbpedia.org/ontology/residence">
+        <rdfs:range rdf:resource="http://dbpedia.org/ontology/Place"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/restingPlace -->
+
+    <owl:ObjectProperty rdf:about="http://dbpedia.org/ontology/restingPlace">
+        <rdfs:range rdf:resource="http://dbpedia.org/ontology/Place"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/routeEndLocation -->
+
+    <owl:ObjectProperty rdf:about="http://dbpedia.org/ontology/routeEndLocation">
+        <rdfs:range rdf:resource="http://dbpedia.org/ontology/Place"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/routeStartLocation -->
+
+    <owl:ObjectProperty rdf:about="http://dbpedia.org/ontology/routeStartLocation">
+        <rdfs:range rdf:resource="http://dbpedia.org/ontology/Place"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/settlementAttached -->
+
+    <owl:ObjectProperty rdf:about="http://dbpedia.org/ontology/settlementAttached">
+        <rdfs:range rdf:resource="http://dbpedia.org/ontology/Place"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/sire -->
+
+    <owl:ObjectProperty rdf:about="http://dbpedia.org/ontology/sire">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Animal"/>
+        <rdfs:range rdf:resource="http://dbpedia.org/ontology/Animal"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/sourceConfluencePlace -->
+
+    <owl:ObjectProperty rdf:about="http://dbpedia.org/ontology/sourceConfluencePlace">
+        <rdfs:range rdf:resource="http://dbpedia.org/ontology/Place"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/sourceConfluenceRegion -->
+
+    <owl:ObjectProperty rdf:about="http://dbpedia.org/ontology/sourceConfluenceRegion">
+        <rdfs:range rdf:resource="http://dbpedia.org/ontology/Place"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/southEastPlace -->
+
+    <owl:ObjectProperty rdf:about="http://dbpedia.org/ontology/southEastPlace">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Place"/>
+        <rdfs:range rdf:resource="http://dbpedia.org/ontology/Place"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/southPlace -->
+
+    <owl:ObjectProperty rdf:about="http://dbpedia.org/ontology/southPlace">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Place"/>
+        <rdfs:range rdf:resource="http://dbpedia.org/ontology/Place"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/southWestPlace -->
+
+    <owl:ObjectProperty rdf:about="http://dbpedia.org/ontology/southWestPlace">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Place"/>
+        <rdfs:range rdf:resource="http://dbpedia.org/ontology/Place"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/startPoint -->
+
+    <owl:ObjectProperty rdf:about="http://dbpedia.org/ontology/startPoint">
+        <rdfs:range rdf:resource="http://dbpedia.org/ontology/Place"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/subdivision -->
+
+    <owl:ObjectProperty rdf:about="http://dbpedia.org/ontology/subdivision">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Place"/>
+        <rdfs:range rdf:resource="http://dbpedia.org/ontology/Place"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/subdivisionName -->
+
+    <owl:ObjectProperty rdf:about="http://dbpedia.org/ontology/subdivisionName">
+        <rdfs:range rdf:resource="http://dbpedia.org/ontology/Place"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/subregion -->
+
+    <owl:ObjectProperty rdf:about="http://dbpedia.org/ontology/subregion">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Place"/>
+        <rdfs:range rdf:resource="http://dbpedia.org/ontology/Place"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/supply -->
+
+    <owl:ObjectProperty rdf:about="http://dbpedia.org/ontology/supply">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Place"/>
+        <rdfs:range rdf:resource="http://dbpedia.org/ontology/Place"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/touristicSite -->
+
+    <owl:ObjectProperty rdf:about="http://dbpedia.org/ontology/touristicSite">
+        <rdfs:range rdf:resource="http://dbpedia.org/ontology/Place"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/westPlace -->
+
+    <owl:ObjectProperty rdf:about="http://dbpedia.org/ontology/westPlace">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Place"/>
+        <rdfs:range rdf:resource="http://dbpedia.org/ontology/Place"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/wilaya -->
+
+    <owl:ObjectProperty rdf:about="http://dbpedia.org/ontology/wilaya">
+        <rdfs:range rdf:resource="http://dbpedia.org/ontology/Place"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/Projet/AlbumPhoto.owl#aEteCreerPar -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/Projet/AlbumPhoto.owl#aEteCreerPar">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/Projet/AlbumPhoto.owl#estAuteur"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/Projet/AlbumPhoto.owl#Photo"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/10/swap/pim/contact#Person"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/Projet/AlbumPhoto.owl#amiDe -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/Projet/AlbumPhoto.owl#amiDe">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://www.w3.org/2000/10/swap/pim/contact#Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/10/swap/pim/contact#Person"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/Projet/AlbumPhoto.owl#apparaitSur -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/Projet/AlbumPhoto.owl#apparaitSur">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/Projet/AlbumPhoto.owl#contient"/>
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Animal"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/Projet/AlbumPhoto.owl#Objet"/>
+        <rdfs:domain rdf:resource="http://www.w3.org/2000/10/swap/pim/contact#Person"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/Projet/AlbumPhoto.owl#Photo"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/Projet/AlbumPhoto.owl#contient -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/Projet/AlbumPhoto.owl#contient">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/Projet/AlbumPhoto.owl#Photo"/>
+        <rdfs:range rdf:resource="http://dbpedia.org/ontology/Animal"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/Projet/AlbumPhoto.owl#Objet"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/10/swap/pim/contact#Person"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/Projet/AlbumPhoto.owl#estAuteur -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/Projet/AlbumPhoto.owl#estAuteur">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.w3.org/2000/10/swap/pim/contact#Person"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/Projet/AlbumPhoto.owl#Photo"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/Projet/AlbumPhoto.owl#estLieeA -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/Projet/AlbumPhoto.owl#estLieeA">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/Projet/AlbumPhoto.owl#Photo"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/Projet/AlbumPhoto.owl#Evenement"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/Projet/AlbumPhoto.owl#estLocalise -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/Projet/AlbumPhoto.owl#estLocalise">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/Projet/AlbumPhoto.owl#Photo"/>
+        <rdfs:range rdf:resource="http://dbpedia.org/ontology/Place"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/Projet/AlbumPhoto.owl#aEuLieuLe -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/Projet/AlbumPhoto.owl#aEuLieuLe">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/Projet/AlbumPhoto.owl#Evenement"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/Projet/AlbumPhoto.owl#couleurDominate -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/Projet/AlbumPhoto.owl#couleurDominate">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/Projet/AlbumPhoto.owl#Photo"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/Projet/AlbumPhoto.owl#creerLe -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/Projet/AlbumPhoto.owl#creerLe">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/Projet/AlbumPhoto.owl#Photo"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://dbpedia.org/ontology/Agent -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/Agent">
+        <owl:disjointWith rdf:resource="http://dbpedia.org/ontology/Place"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/Amphibian -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/Amphibian">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Animal"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/Animal -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/Animal">
+        <owl:equivalentClass rdf:resource="http://www.wikidata.org/entity/Q729"/>
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Eukaryote"/>
+        <rdfs:label xml:lang="de">Tier</rdfs:label>
+        <rdfs:label xml:lang="ga">ainmhí</rdfs:label>
+        <rdfs:label xml:lang="en">animal</rdfs:label>
+        <rdfs:label xml:lang="es">animal</rdfs:label>
+        <rdfs:label xml:lang="fr">animal</rdfs:label>
+        <rdfs:label xml:lang="gl">animal</rdfs:label>
+        <rdfs:label xml:lang="pt">animal</rdfs:label>
+        <rdfs:label xml:lang="it">animale</rdfs:label>
+        <rdfs:label xml:lang="nl">dier</rdfs:label>
+        <rdfs:label xml:lang="sl">žival</rdfs:label>
+        <rdfs:label xml:lang="el">ζώο</rdfs:label>
+        <rdfs:label xml:lang="ja">動物</rdfs:label>
+        <rdfs:label xml:lang="ko">동물</rdfs:label>
+        <prov:wasDerivedFrom rdf:resource="http://mappings.dbpedia.org/index.php/OntologyClass:Animal"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/Arachnid -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/Arachnid">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Animal"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/ArchitecturalStructure -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/ArchitecturalStructure">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Place"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/Bird -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/Bird">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Animal"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/CelestialBody -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/CelestialBody">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Place"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/Cemetery -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/Cemetery">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Place"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/ConcentrationCamp -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/ConcentrationCamp">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Place"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/CountrySeat -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/CountrySeat">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Place"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/Crustacean -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/Crustacean">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Animal"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/Eukaryote -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/Eukaryote"/>
+    
+
+
+    <!-- http://dbpedia.org/ontology/Fish -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/Fish">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Animal"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/Garden -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/Garden">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Place"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/HistoricPlace -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/HistoricPlace">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Place"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/Insect -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/Insect">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Animal"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/Location -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/Location">
+        <owl:equivalentClass rdf:resource="http://dbpedia.org/ontology/Place"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/Mammal -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/Mammal">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Animal"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/Mine -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/Mine">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Place"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/Mollusca -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/Mollusca">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Animal"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/Monument -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/Monument">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Place"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/NaturalPlace -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/NaturalPlace">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Place"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/Park -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/Park">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Place"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/Place -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/Place">
+        <owl:equivalentClass rdf:resource="http://schema.org/Place"/>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:comment xml:lang="en">Immobile things or locations.</rdfs:comment>
+        <rdfs:comment xml:lang="pt">uma localização</rdfs:comment>
+        <rdfs:label xml:lang="de">Ort</rdfs:label>
+        <rdfs:label xml:lang="eu">lekua</rdfs:label>
+        <rdfs:label xml:lang="fr">lieu</rdfs:label>
+        <rdfs:label xml:lang="ca">lloc</rdfs:label>
+        <rdfs:label xml:lang="es">lugar</rdfs:label>
+        <rdfs:label xml:lang="pt">lugar</rdfs:label>
+        <rdfs:label xml:lang="pl">miejsce</rdfs:label>
+        <rdfs:label xml:lang="nl">plaats</rdfs:label>
+        <rdfs:label xml:lang="en">place</rdfs:label>
+        <rdfs:label xml:lang="ga">áit</rdfs:label>
+        <rdfs:label xml:lang="el">περιοχή</rdfs:label>
+        <rdfs:label xml:lang="ar">مكان</rdfs:label>
+        <rdfs:label xml:lang="ja">立地</rdfs:label>
+        <prov:wasDerivedFrom rdf:resource="http://mappings.dbpedia.org/index.php/OntologyClass:Place"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/PopulatedPlace -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/PopulatedPlace">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Place"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/ProtectedArea -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/ProtectedArea">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Place"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/Reptile -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/Reptile">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Animal"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/SiteOfSpecialScientificInterest -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/SiteOfSpecialScientificInterest">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Place"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/WineRegion -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/WineRegion">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Place"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/WorldHeritageSite -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/WorldHeritageSite">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Place"/>
+    </owl:Class>
+    
+
+
+    <!-- http://schema.org/Place -->
+
+    <owl:Class rdf:about="http://schema.org/Place"/>
+    
+
+
+    <!-- http://www.semanticweb.org/Projet/AlbumPhoto.owl#Evenement -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/Projet/AlbumPhoto.owl#Evenement">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/Projet/AlbumPhoto.owl#anniversaire"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/Projet/AlbumPhoto.owl#cremalliere"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/Projet/AlbumPhoto.owl#enterrement"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/Projet/AlbumPhoto.owl#fete"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/Projet/AlbumPhoto.owl#mariage"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/Projet/AlbumPhoto.owl#naissance"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/Projet/AlbumPhoto.owl#potDeDepart"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/Projet/AlbumPhoto.owl#voyage"/>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/Projet/AlbumPhoto.owl#Objet -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/Projet/AlbumPhoto.owl#Objet">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/Projet/AlbumPhoto.owl#bibelot"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/Projet/AlbumPhoto.owl#contenant"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/Projet/AlbumPhoto.owl#electronique"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/Projet/AlbumPhoto.owl#meuble"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/Projet/AlbumPhoto.owl#utilitaire"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/Projet/AlbumPhoto.owl#vehicule"/>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/Projet/AlbumPhoto.owl#Photo -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/Projet/AlbumPhoto.owl#Photo">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/Projet/AlbumPhoto.owl#natureMorte"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/Projet/AlbumPhoto.owl#panorama"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/Projet/AlbumPhoto.owl#paysage"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/Projet/AlbumPhoto.owl#photoAbstraite"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/Projet/AlbumPhoto.owl#photoArt"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/Projet/AlbumPhoto.owl#photoSport"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/Projet/AlbumPhoto.owl#portrait"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/Projet/AlbumPhoto.owl#selfie"/>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/Projet/AlbumPhoto.owl#anniversaire -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/Projet/AlbumPhoto.owl#anniversaire">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/Projet/AlbumPhoto.owl#Evenement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/Projet/AlbumPhoto.owl#bibelot -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/Projet/AlbumPhoto.owl#bibelot">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/Projet/AlbumPhoto.owl#Objet"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/Projet/AlbumPhoto.owl#contenant -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/Projet/AlbumPhoto.owl#contenant">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/Projet/AlbumPhoto.owl#Objet"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/Projet/AlbumPhoto.owl#cremalliere -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/Projet/AlbumPhoto.owl#cremalliere">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/Projet/AlbumPhoto.owl#Evenement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/Projet/AlbumPhoto.owl#electronique -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/Projet/AlbumPhoto.owl#electronique">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/Projet/AlbumPhoto.owl#Objet"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/Projet/AlbumPhoto.owl#enterrement -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/Projet/AlbumPhoto.owl#enterrement">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/Projet/AlbumPhoto.owl#Evenement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/Projet/AlbumPhoto.owl#fete -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/Projet/AlbumPhoto.owl#fete">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/Projet/AlbumPhoto.owl#Evenement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/Projet/AlbumPhoto.owl#mariage -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/Projet/AlbumPhoto.owl#mariage">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/Projet/AlbumPhoto.owl#Evenement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/Projet/AlbumPhoto.owl#meuble -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/Projet/AlbumPhoto.owl#meuble">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/Projet/AlbumPhoto.owl#Objet"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/Projet/AlbumPhoto.owl#naissance -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/Projet/AlbumPhoto.owl#naissance">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/Projet/AlbumPhoto.owl#Evenement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/Projet/AlbumPhoto.owl#natureMorte -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/Projet/AlbumPhoto.owl#natureMorte">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/Projet/AlbumPhoto.owl#Photo"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/Projet/AlbumPhoto.owl#panorama -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/Projet/AlbumPhoto.owl#panorama">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/Projet/AlbumPhoto.owl#paysage"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/Projet/AlbumPhoto.owl#paysage -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/Projet/AlbumPhoto.owl#paysage">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/Projet/AlbumPhoto.owl#Photo"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/Projet/AlbumPhoto.owl#photoAbstraite -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/Projet/AlbumPhoto.owl#photoAbstraite">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/Projet/AlbumPhoto.owl#Photo"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/Projet/AlbumPhoto.owl#photoArt -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/Projet/AlbumPhoto.owl#photoArt">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/Projet/AlbumPhoto.owl#Photo"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/Projet/AlbumPhoto.owl#photoSport -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/Projet/AlbumPhoto.owl#photoSport">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/Projet/AlbumPhoto.owl#Photo"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/Projet/AlbumPhoto.owl#portrait -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/Projet/AlbumPhoto.owl#portrait">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/Projet/AlbumPhoto.owl#Photo"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/Projet/AlbumPhoto.owl#potDeDepart -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/Projet/AlbumPhoto.owl#potDeDepart">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/Projet/AlbumPhoto.owl#Evenement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/Projet/AlbumPhoto.owl#selfie -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/Projet/AlbumPhoto.owl#selfie">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/Projet/AlbumPhoto.owl#Photo"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/Projet/AlbumPhoto.owl#utilitaire -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/Projet/AlbumPhoto.owl#utilitaire">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/Projet/AlbumPhoto.owl#Objet"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/Projet/AlbumPhoto.owl#vehicule -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/Projet/AlbumPhoto.owl#vehicule">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/Projet/AlbumPhoto.owl#Objet"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/Projet/AlbumPhoto.owl#voyage -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/Projet/AlbumPhoto.owl#voyage">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/Projet/AlbumPhoto.owl#Evenement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q729 -->
+
+    <owl:Class rdf:about="http://www.wikidata.org/entity/Q729"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/Projet/AlbumPhoto.owl#FlorianPizzala -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Projet/AlbumPhoto.owl#FlorianPizzala">
+        <rdf:type rdf:resource="http://www.w3.org/2000/10/swap/pim/contact#Person"/>
+        <amiDe rdf:resource="http://www.semanticweb.org/Projet/AlbumPhoto.owl#GaetanRomagna"/>
+        <foaf:age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">23</foaf:age>
+        <foaf:familyName>Pizzala</foaf:familyName>
+        <foaf:firstName>Florian</foaf:firstName>
+        <foaf:gender>Male</foaf:gender>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Projet/AlbumPhoto.owl#GaetanRomagna -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Projet/AlbumPhoto.owl#GaetanRomagna">
+        <rdf:type rdf:resource="http://www.w3.org/2000/10/swap/pim/contact#Person"/>
+        <amiDe rdf:resource="http://www.semanticweb.org/Projet/AlbumPhoto.owl#FlorianPizzala"/>
+        <foaf:age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">23</foaf:age>
+        <foaf:familyName>Romagna</foaf:familyName>
+        <foaf:firstName>Gaetan</foaf:firstName>
+        <foaf:gender>Male</foaf:gender>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Projet/AlbumPhoto.owl#Grenoble -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Projet/AlbumPhoto.owl#Grenoble">
+        <rdf:type rdf:resource="http://dbpedia.org/ontology/Place"/>
+        <ontology:region rdf:resource="http://www.semanticweb.org/Projet/AlbumPhoto.owl#Isere"/>
+        <foaf:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Grenoble</foaf:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Projet/AlbumPhoto.owl#Isere -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Projet/AlbumPhoto.owl#Isere">
+        <rdf:type rdf:resource="http://dbpedia.org/ontology/Location"/>
+        <foaf:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Isère</foaf:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Projet/AlbumPhoto.owl#ManuelAtencia -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Projet/AlbumPhoto.owl#ManuelAtencia">
+        <rdf:type rdf:resource="http://www.w3.org/2000/10/swap/pim/contact#Person"/>
+        <foaf:familyName>Atencia</foaf:familyName>
+        <foaf:firstName>Manuel</foaf:firstName>
+        <foaf:gender>Male</foaf:gender>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Projet/AlbumPhoto.owl#Marseille -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Projet/AlbumPhoto.owl#Marseille">
+        <rdf:type rdf:resource="http://dbpedia.org/ontology/Place"/>
+        <ontology:region rdf:resource="http://www.semanticweb.org/Projet/AlbumPhoto.owl#Paca"/>
+        <foaf:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Marseille</foaf:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Projet/AlbumPhoto.owl#Paca -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Projet/AlbumPhoto.owl#Paca">
+        <rdf:type rdf:resource="http://dbpedia.org/ontology/Location"/>
+        <foaf:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Paca</foaf:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Projet/AlbumPhoto.owl#PotDepartJeanMichel -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Projet/AlbumPhoto.owl#PotDepartJeanMichel">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Projet/AlbumPhoto.owl#potDeDepart"/>
+        <aEuLieuLe rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-01-18T14:00:00</aEuLieuLe>
+        <foaf:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pot de départ de Jean-Michel</foaf:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Projet/AlbumPhoto.owl#anniversaireGaetan -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Projet/AlbumPhoto.owl#anniversaireGaetan">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Projet/AlbumPhoto.owl#anniversaire"/>
+        <aEuLieuLe rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-10-10T20:00:00</aEuLieuLe>
+        <foaf:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Anniversaire Gaetan</foaf:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Projet/AlbumPhoto.owl#armoire -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Projet/AlbumPhoto.owl#armoire">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Projet/AlbumPhoto.owl#meuble"/>
+        <foaf:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">armoire</foaf:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Projet/AlbumPhoto.owl#autocar -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Projet/AlbumPhoto.owl#autocar">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Projet/AlbumPhoto.owl#vehicule"/>
+        <owl:sameAs rdf:resource="http://www.semanticweb.org/Projet/AlbumPhoto.owl#bus"/>
+        <foaf:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">autocar</foaf:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Projet/AlbumPhoto.owl#avion -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Projet/AlbumPhoto.owl#avion">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Projet/AlbumPhoto.owl#vehicule"/>
+        <foaf:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">avion</foaf:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Projet/AlbumPhoto.owl#benne -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Projet/AlbumPhoto.owl#benne">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Projet/AlbumPhoto.owl#contenant"/>
+        <foaf:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">benne</foaf:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Projet/AlbumPhoto.owl#boite -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Projet/AlbumPhoto.owl#boite">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Projet/AlbumPhoto.owl#contenant"/>
+        <foaf:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">boite</foaf:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Projet/AlbumPhoto.owl#bus -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Projet/AlbumPhoto.owl#bus">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Projet/AlbumPhoto.owl#vehicule"/>
+        <foaf:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">bus</foaf:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Projet/AlbumPhoto.owl#cercueil -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Projet/AlbumPhoto.owl#cercueil">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Projet/AlbumPhoto.owl#contenant"/>
+        <foaf:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cercueil</foaf:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Projet/AlbumPhoto.owl#chaise -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Projet/AlbumPhoto.owl#chaise">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Projet/AlbumPhoto.owl#meuble"/>
+        <foaf:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">chaise</foaf:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Projet/AlbumPhoto.owl#chat -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Projet/AlbumPhoto.owl#chat">
+        <rdf:type rdf:resource="http://dbpedia.org/ontology/Mammal"/>
+        <foaf:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">chat</foaf:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Projet/AlbumPhoto.owl#chien -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Projet/AlbumPhoto.owl#chien">
+        <rdf:type rdf:resource="http://dbpedia.org/ontology/Mammal"/>
+        <foaf:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">chien</foaf:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Projet/AlbumPhoto.owl#commode -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Projet/AlbumPhoto.owl#commode">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Projet/AlbumPhoto.owl#meuble"/>
+        <foaf:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">commode</foaf:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Projet/AlbumPhoto.owl#four -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Projet/AlbumPhoto.owl#four">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Projet/AlbumPhoto.owl#electronique"/>
+        <foaf:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">four</foaf:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Projet/AlbumPhoto.owl#lit -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Projet/AlbumPhoto.owl#lit">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Projet/AlbumPhoto.owl#meuble"/>
+        <foaf:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lit</foaf:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Projet/AlbumPhoto.owl#machine_à_laver -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Projet/AlbumPhoto.owl#machine_à_laver">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Projet/AlbumPhoto.owl#electronique"/>
+        <foaf:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">machine à laver</foaf:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Projet/AlbumPhoto.owl#micronde -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Projet/AlbumPhoto.owl#micronde">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Projet/AlbumPhoto.owl#electronique"/>
+        <foaf:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">micronde</foaf:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Projet/AlbumPhoto.owl#moineau -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Projet/AlbumPhoto.owl#moineau">
+        <rdf:type rdf:resource="http://dbpedia.org/ontology/Bird"/>
+        <foaf:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">moineau</foaf:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Projet/AlbumPhoto.owl#photoTest1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Projet/AlbumPhoto.owl#photoTest1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Projet/AlbumPhoto.owl#selfie"/>
+        <aEteCreerPar rdf:resource="http://www.semanticweb.org/Projet/AlbumPhoto.owl#FlorianPizzala"/>
+        <contient rdf:resource="http://www.semanticweb.org/Projet/AlbumPhoto.owl#FlorianPizzala"/>
+        <contient rdf:resource="http://www.semanticweb.org/Projet/AlbumPhoto.owl#ManuelAtencia"/>
+        <contient rdf:resource="http://www.semanticweb.org/Projet/AlbumPhoto.owl#armoire"/>
+        <contient rdf:resource="http://www.semanticweb.org/Projet/AlbumPhoto.owl#voiture"/>
+        <estLieeA rdf:resource="http://www.semanticweb.org/Projet/AlbumPhoto.owl#PotDepartJeanMichel"/>
+        <estLocalise rdf:resource="http://www.semanticweb.org/Projet/AlbumPhoto.owl#Grenoble"/>
+        <couleurDominate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Rouge</couleurDominate>
+        <creerLe rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2001-10-26T21:32:52</creerLe>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Projet/AlbumPhoto.owl#photoTest2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Projet/AlbumPhoto.owl#photoTest2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Projet/AlbumPhoto.owl#portrait"/>
+        <aEteCreerPar rdf:resource="http://www.semanticweb.org/Projet/AlbumPhoto.owl#GaetanRomagna"/>
+        <contient rdf:resource="http://www.semanticweb.org/Projet/AlbumPhoto.owl#ManuelAtencia"/>
+        <contient rdf:resource="http://www.semanticweb.org/Projet/AlbumPhoto.owl#four"/>
+        <contient rdf:resource="http://www.semanticweb.org/Projet/AlbumPhoto.owl#stylo"/>
+        <estLocalise rdf:resource="http://www.semanticweb.org/Projet/AlbumPhoto.owl#Marseille"/>
+        <creerLe rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-12-03T10:45:00</creerLe>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Projet/AlbumPhoto.owl#photoTest3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Projet/AlbumPhoto.owl#photoTest3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Projet/AlbumPhoto.owl#Photo"/>
+        <contient rdf:resource="http://www.semanticweb.org/Projet/AlbumPhoto.owl#boite"/>
+        <contient rdf:resource="http://www.semanticweb.org/Projet/AlbumPhoto.owl#chaise"/>
+        <contient rdf:resource="http://www.semanticweb.org/Projet/AlbumPhoto.owl#micronde"/>
+        <contient rdf:resource="http://www.semanticweb.org/Projet/AlbumPhoto.owl#train"/>
+        <couleurDominate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jaune</couleurDominate>
+        <creerLe rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">1995-02-01T23:12:59</creerLe>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Projet/AlbumPhoto.owl#photoTest4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Projet/AlbumPhoto.owl#photoTest4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Projet/AlbumPhoto.owl#portrait"/>
+        <aEteCreerPar rdf:resource="http://www.semanticweb.org/Projet/AlbumPhoto.owl#FlorianPizzala"/>
+        <contient rdf:resource="http://www.semanticweb.org/Projet/AlbumPhoto.owl#GaetanRomagna"/>
+        <contient rdf:resource="http://www.semanticweb.org/Projet/AlbumPhoto.owl#ManuelAtencia"/>
+        <contient rdf:resource="http://www.semanticweb.org/Projet/AlbumPhoto.owl#chat"/>
+        <estLieeA rdf:resource="http://www.semanticweb.org/Projet/AlbumPhoto.owl#anniversaireGaetan"/>
+        <creerLe rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-03-03T22:00:00</creerLe>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Projet/AlbumPhoto.owl#photoTest5 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Projet/AlbumPhoto.owl#photoTest5">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Projet/AlbumPhoto.owl#photoSport"/>
+        <aEteCreerPar rdf:resource="http://www.semanticweb.org/Projet/AlbumPhoto.owl#ManuelAtencia"/>
+        <contient rdf:resource="http://www.semanticweb.org/Projet/AlbumPhoto.owl#FlorianPizzala"/>
+        <contient rdf:resource="http://www.semanticweb.org/Projet/AlbumPhoto.owl#GaetanRomagna"/>
+        <estLieeA rdf:resource="http://www.semanticweb.org/Projet/AlbumPhoto.owl#anniversaireGaetan"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Projet/AlbumPhoto.owl#photoTest6 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Projet/AlbumPhoto.owl#photoTest6">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Projet/AlbumPhoto.owl#paysage"/>
+        <aEteCreerPar rdf:resource="http://www.semanticweb.org/Projet/AlbumPhoto.owl#GaetanRomagna"/>
+        <contient rdf:resource="http://www.semanticweb.org/Projet/AlbumPhoto.owl#chaise"/>
+        <contient rdf:resource="http://www.semanticweb.org/Projet/AlbumPhoto.owl#chien"/>
+        <estLocalise rdf:resource="http://www.semanticweb.org/Projet/AlbumPhoto.owl#Grenoble"/>
+        <couleurDominate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jaune</couleurDominate>
+        <creerLe rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2010-11-11T10:00:00</creerLe>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Projet/AlbumPhoto.owl#placard -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Projet/AlbumPhoto.owl#placard">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Projet/AlbumPhoto.owl#meuble"/>
+        <foaf:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">placard</foaf:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Projet/AlbumPhoto.owl#placard_à_torchons -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Projet/AlbumPhoto.owl#placard_à_torchons">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Projet/AlbumPhoto.owl#meuble"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Projet/AlbumPhoto.owl#poubelle -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Projet/AlbumPhoto.owl#poubelle">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Projet/AlbumPhoto.owl#contenant"/>
+        <foaf:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">poubelle</foaf:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Projet/AlbumPhoto.owl#stylo -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Projet/AlbumPhoto.owl#stylo">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Projet/AlbumPhoto.owl#utilitaire"/>
+        <foaf:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stylo</foaf:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Projet/AlbumPhoto.owl#table -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Projet/AlbumPhoto.owl#table">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Projet/AlbumPhoto.owl#meuble"/>
+        <foaf:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">table</foaf:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Projet/AlbumPhoto.owl#train -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Projet/AlbumPhoto.owl#train">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Projet/AlbumPhoto.owl#vehicule"/>
+        <foaf:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">train</foaf:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Projet/AlbumPhoto.owl#voiture -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Projet/AlbumPhoto.owl#voiture">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Projet/AlbumPhoto.owl#vehicule"/>
+        <foaf:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">voiture</foaf:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/Projet/AlbumPhoto.owl#anniversaire"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/Projet/AlbumPhoto.owl#cremalliere"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/Projet/AlbumPhoto.owl#enterrement"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/Projet/AlbumPhoto.owl#fete"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/Projet/AlbumPhoto.owl#mariage"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/Projet/AlbumPhoto.owl#naissance"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/Projet/AlbumPhoto.owl#potDeDepart"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/Projet/AlbumPhoto.owl#voyage"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/Projet/AlbumPhoto.owl#bibelot"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/Projet/AlbumPhoto.owl#contenant"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/Projet/AlbumPhoto.owl#electronique"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/Projet/AlbumPhoto.owl#meuble"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/Projet/AlbumPhoto.owl#utilitaire"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/Projet/AlbumPhoto.owl#vehicule"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/Projet/AlbumPhoto.owl#natureMorte"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/Projet/AlbumPhoto.owl#panorama"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/Projet/AlbumPhoto.owl#paysage"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/Projet/AlbumPhoto.owl#photoAbstraite"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/Projet/AlbumPhoto.owl#photoArt"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/Projet/AlbumPhoto.owl#photoSport"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/Projet/AlbumPhoto.owl#portrait"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/Projet/AlbumPhoto.owl#selfie"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.6.20160910-2108) https://github.com/owlcs/owlapi -->
+

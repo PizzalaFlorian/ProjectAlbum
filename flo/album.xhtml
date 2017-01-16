@@ -12,27 +12,50 @@
 </h:head>
 
 <f:view>
-
 <h:body>
-	<ui:insert name="header">
-		<ui:include src="/components/menu.xhtml"></ui:include>
-	</ui:insert>
-<p:contentFlow value='#{albumController.getAlbumById(request.getParameter("albumId")).pictures}' var="picture">
-			<p:commandButton action="#{albumController.deletePictureById(picture.id)}" value="Supprimer"/>
-			<h:outputLink value="picture.xhtml">
-	    		<f:param name="pictureID" value="${picture.id}"/>
-	    	</h:outputLink>    
-            <p:graphicImage value="#{picture.localfile}" styleClass="content" width="300" height="300" />
-    		<div class="caption" style="color:black;">#{picture.title}</div>
+<h:form id="form">
 
-</p:contentFlow>
-<p>#{picture.id}</p> 
-<h:outputLink value="picture.xhtml">
-	   <f:param name="pictureId" value="${picture.id}"/>
-	   <h:outputText value="Annoter l'image" />
-</h:outputLink>   
-
-	
+	    <p:dataGrid var="picture" value='#{albumController.getAlbumById(request.getParameter("albumId")).pictures}' 
+	    			columns="3" layout="grid" paginator="false">
+ 
+        <f:facet name="header">
+            #{albumController.getAlbumById(request.getParameter("albumId")).title}
+        </f:facet>
+ 
+        <p:panel header="#{picture.id}" style="text-align:center">
+            <h:panelGrid columns="1" style="width:100%">
+                <p:graphicImage value="#{picture.localfile}" width="128"/> 
+                <h:outputText value="#{picture.title}" />
+                <p:commandButton action="#{pictureController.deletePictureById(picture.id)}" value="#{picture.id}"/> 
+		    	<h:commandButton action="#{pictureController.annotePictureToPhoto(picture.uri)}" value="Annoter cette fucking image"></h:commandButton> 
+                <p:commandButton oncomplete="PF('pictureDialog').show()" icon="ui-icon-search">
+                    <f:setPropertyActionListener value="#{picture}" target="#{pictureController.selectedPicture}" />
+                </p:commandButton>
+               
+            </h:panelGrid>
+        </p:panel>
+    </p:dataGrid>
+    
+    <p:dialog header="Photo Info" widgetVar="pictureDialog" modal="true" showEffect="fade" hideEffect="fade" resizable="false">
+        <p:outputPanel style="text-align:center;">
+            <p:panelGrid  columns="2" rendered="#{not empty pictureController.selectedPicture}" columnClasses="label,value">
+ 
+                <h:outputText value="Id:" />
+                <h:outputText value="#{pictureController.selectedPicture.id}" />
+ 
+                <h:outputText value="Nom" />
+                <h:outputText value="#{pictureController.selectedPicture.title}" />
+ 
+                <h:outputText value="URI" />
+                <h:outputText value="#{pictureController.selectedPicture.uri}" />
+ 
+                <h:outputText value="Path" />
+                <h:outputText value="#{pictureController.selectedPicture.localfile}" />
+            </p:panelGrid>
+        </p:outputPanel>
+    </p:dialog>
+    
+</h:form>
 </h:body>
 </f:view>
 </html>

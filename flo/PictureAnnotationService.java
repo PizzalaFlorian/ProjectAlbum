@@ -55,34 +55,15 @@ public class PictureAnnotationService {
 		Resource o = m.createResource(objet.toString());
 		r.addProperty(p, o);
 		System.out.println("triplet achevé");
-		//File f = new File(predicat);
-		//m.write(System.out,"RDF/XML");
+		
 		System.out.println("connection à la db jena");
 		String serviceURI = "http://localhost:3030/ALBUM/";
 		DatasetAccessor accessor = DatasetAccessorFactory.createHTTP(serviceURI);
-		//accessor.putModel(m);
+		System.out.println("upload du triplet");
 		accessor.add(m);
 		System.out.println("triplet ajouté");
 	}
 	
-	
-	
-	public static void uploadRDF(File rdf)
-			throws IOException {
-
-		String serviceURI = "http://localhost:3030/ALBUM";
-		// parse the file
-		Model m = ModelFactory.createDefaultModel();
-		try (FileInputStream in = new FileInputStream(rdf)) {
-			m.read(in, null, "RDF/XML");
-		}
-
-		// upload the resulting model
-		DatasetAccessor accessor = DatasetAccessorFactory
-				.createHTTP(serviceURI);
-		accessor.putModel(m);
-	}
-
 	public static void execSelectAndPrint(String query) {
 		String serviceURI = "http://localhost:3030/ALBUM";
 		QueryExecution q = QueryExecutionFactory.sparqlService(serviceURI,

@@ -18,14 +18,16 @@
 		<ui:include src="/components/menu.xhtml"></ui:include>
 	</ui:insert>
 	<div>
-			<p>#{pictureController.getPictureById(request.getParameter("pictureId")).uri}</p>
-			<p:graphicImage value='#{pictureController.getPictureById(request.getParameter("pictureId")).localfile}' styleClass="content" width="300" height="300" />
-			<h:form action="picturet.xhtml?pictureId=#{request.getParameter('pictureId')}">
-				<h:commandButton action="#{pictureController.annotePictureToPhoto()}">
-					<f:param name="pictureId" value="${picture.id}"/>
+		<h:form>
+			 <h:outputLink value="picture.xhtml">
+			 	<f:param name="pictureId" value="${request.getParameter('pictureId')}"/>
+			 	<p>#{pictureController.getPictureById(request.getParameter("pictureId")).uri}</p>
+				<p:graphicImage value='#{pictureController.getPictureById(request.getParameter("pictureId")).localfile}' styleClass="content" width="300" height="300" />
+				<h:commandButton action="#{annotePictureController.annotePictureToPhoto()}">					
 					<f:param name="pictureUri" value='#{pictureController.getPictureById(request.getParameter("pictureId")).uri}' />
 				</h:commandButton>
-			</h:form>
+			 </h:outputLink>
+		</h:form>
 			
 
 	</div>	

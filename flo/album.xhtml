@@ -15,7 +15,7 @@
 <h:body>
 
 	<h:form>
-		<h:outputLink value="list-album.xhtml">
+		<h:outputLink value="list-album.xhtml" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only btn">
 			<p:outputLabel>Retour</p:outputLabel>
 		</h:outputLink>
 		<p:dataGrid var="picture" value='#{albumController.getAlbumById(request.getParameter("albumId")).pictures}' 

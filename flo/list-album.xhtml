@@ -15,7 +15,17 @@
 <h:body>
 
 	<h:form id="form">
+		<div class="menu">
+			<c:if test="#{appUserSession.getConnectedUser().getRole()}">
 	
+				<h:outputLink value="list-user.xhtml">
+					<p:outputLabel>Liste des utilisateurs</p:outputLabel>
+				</h:outputLink>
+				<br/>
+			</c:if>
+			<p:commandButton action="#{appUserSession.logout()}" value="Se déconnecter"/>
+		</div>
+		
 		<p:carousel value="#{albumController.getListAlbumOwnedByCurrentUser()}" headerText="Mes Albums" var="album" 
 		    		itemStyle="text-align:center" responsive="true">
 			<p:panelGrid columns="2" columnClasses="label,value" layout="grid"
@@ -60,7 +70,7 @@
 			<p:commandButton value="Partager" action="#{albumController.shareAlbum(albumController.selectedAlubm.id, appUserController.selectedUser.id)}" />	
 		</p:dialog>
 	        
-		<a href="/ProjetAlbum/faces/add-album.xhtml">Ajouter album</a>
+		<a href="/ProjetAlbum/faces/add-album.xhtml" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only btn">Ajouter album</a>
 
 	</h:form>
 

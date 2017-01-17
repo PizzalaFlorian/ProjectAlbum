@@ -23,3 +23,22 @@
 #fadeEffect{
 	background-color:white !important;
 }
+
+.menu{
+	display:flex;
+	flex-direction:row;
+	justify-content:space-around;
+}
+
+.btn{
+	padding:5px;
+	margin:5px;
+	 text-decoration:none; 
+}
+
+.btn2{
+	 text-decoration:none; 
+	 padding:5px;
+	 font-weight: normal;
+	 color:black;
+}

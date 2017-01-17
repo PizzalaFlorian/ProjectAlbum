@@ -1,0 +1,41 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" 
+	xmlns:f="http://java.sun.com/jsf/core" 
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:p="http://primefaces.org/ui">
+	
+<h:head>
+	<link href="resources/style.css" type="text/css" rel="stylesheet" />
+</h:head>
+
+<h:body>
+
+	<h:form enctype="multipart/form-data">
+		<h:outputLabel for="titre" value="Titre : " />
+		<h:inputText id="titre" value="#{albumController.album.title}" 
+			title="Renseignez le titre de l'album"
+			required="true" requiredMessage="Il faut donner un nom à l'album"
+			validator="#{albumController.validerTitre}"/>
+		<br/>
+		<h:outputLabel for="description" value="Description : " />
+		<h:inputText id="description" value="#{albumController.album.description}" 
+			title="Donnez une description de l'album"/>
+		<br/>
+		<h:outputLabel for="zip" value="Fichier zip avec photos" />
+		<h:inputFile id="zip" value="#{albumController.zip}" 		
+			title="Choisissez un fichier zip avec des images"
+			required="true" requiredMessage="Il faut choisir un fichier"
+			 />
+		<br/>
+		<h:commandButton action="#{albumController.createAlbum()}" value="Créer l'album"/>
+		<br/>
+		<br/>
+		<h:outputLink value="list-album.xhtml" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only btn2">
+			<p:outputLabel>Annuler</p:outputLabel>
+		</h:outputLink>
+	</h:form>
+	
+</h:body>
+
+</html>

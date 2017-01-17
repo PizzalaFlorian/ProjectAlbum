@@ -235,7 +235,113 @@ public class AnnotePictureController {
 		return getPictureByQuery(query,"image");
 	}
 	
+	public static ArrayList<String> getAllFriendPictureByName(String firstName, String familyName){
+		String query = " PREFIX albumPhoto: <http://www.semanticweb.org/Projet/AlbumPhoto.owl#> "
+						+" PREFIX foaf: <http://xmlns.com/foaf/0.1/> "
+						+" SELECT DISTINCT ?image "
+						+" WHERE { "
+						+"  ?image albumPhoto:contient ?personne. "
+						+"  ?personne albumPhoto:amiDe ?ami . "
+						+"  ?ami foaf:firstName "+'"'+firstName+'"'+" ; "
+						+"      foaf:familyName "+'"'+familyName+'"'+" . "
+						+" } ";
+
+		return getPictureByQuery(query,"image");
+	}
 	
+	public static ArrayList<String> getAllPictureTakeOnEvent(){
+		String query = "PREFIX albumPhoto: <http://www.semanticweb.org/Projet/AlbumPhoto.owl#>"
+						+" SELECT DISTINCT ?image "
+						+" WHERE { "
+						+"  ?image albumPhoto:estLieeA ?x. "
+						+" } ";
+
+		return getPictureByQuery(query,"image");
+	}
+	
+	public static ArrayList<String> getAllPictureTakeOnEventDepictingAPersonByName(String firstName,String familyName){
+		String query = "PREFIX albumPhoto: <http://www.semanticweb.org/Projet/AlbumPhoto.owl#>"
+						+" PREFIX foaf: <http://xmlns.com/foaf/0.1/> "
+						+" SELECT DISTINCT ?image "
+						+" WHERE { "
+						+"  ?image albumPhoto:estLieeA ?x. "
+						+"  ?image albumPhoto:contient ?personne . "
+						+"  ?personne foaf:firstName "+'"'+firstName+'"'+" ; "
+						+"      foaf:familyName "+'"'+familyName+'"'+" . "
+						+" } ";
+
+		return getPictureByQuery(query,"image");
+	}
+	
+	public static ArrayList<String> getAllPictureByPlaceName(String Name){
+		String query = "PREFIX albumPhoto: <http://www.semanticweb.org/Projet/AlbumPhoto.owl#>"
+						+" PREFIX foaf: <http://xmlns.com/foaf/0.1/> "
+						+" SELECT DISTINCT ?image "
+						+" WHERE { "
+						+"  ?image albumPhoto:estLocalise ?lieu. "
+						+"  ?lieu foaf:name "+'"'+Name+'"'+" . "
+						+" } ";
+
+		return getPictureByQuery(query,"image");
+	}
+	
+	public static ArrayList<String> getAllPictureByRegionName(String Name){
+		String query = "PREFIX albumPhoto: <http://www.semanticweb.org/Projet/AlbumPhoto.owl#>"
+						+" PREFIX dbo: <http://dbpedia.org/ontology/> "
+						+" PREFIX foaf: <http://xmlns.com/foaf/0.1/> "
+						+" SELECT DISTINCT ?image "
+						+" WHERE { "
+						+"  ?image albumPhoto:estLocalise ?lieu. "
+						+"  ?lieu dbo:region ?region . "
+						+"  ?region foaf:name "+'"'+Name+'"'+" . "
+						+" } ";
+
+		return getPictureByQuery(query,"image");
+	}
+	
+	public static ArrayList<String> getAllPictureByObjectName(String Name){
+		String query = "PREFIX albumPhoto: <http://www.semanticweb.org/Projet/AlbumPhoto.owl#>"
+						+" PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> "
+						+" PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> "
+						+" PREFIX foaf: <http://xmlns.com/foaf/0.1/> "
+						+" SELECT DISTINCT ?image "
+						+" WHERE { "
+						+"  ?image albumPhoto:contient ?chose. "
+						+"  ?objet rdfs:subClassOf* albumPhoto:Objet . "
+						+"  ?chose rdf:type ?objet . "
+						+"  ?chose foaf:name "+'"'+Name+'"'+" . "
+						+" } ";
+
+		return getPictureByQuery(query,"image");
+	}
+	
+	public static ArrayList<String> getAllPictureByAnimalName(String Name){
+		String query = "PREFIX albumPhoto: <http://www.semanticweb.org/Projet/AlbumPhoto.owl#>"
+						+" PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> "
+						+" PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> "
+						+" PREFIX foaf: <http://xmlns.com/foaf/0.1/> "
+						+ " PREFIX dbo: <http://dbpedia.org/ontology/> "
+						+" SELECT DISTINCT ?image "
+						+" WHERE { "
+						+"  ?image albumPhoto:contient ?chose. "
+						+"  ?animal rdfs:subClassOf* dbo:Eukaryote . "
+						+"  ?chose rdf:type ?animal . "
+						+"  ?chose foaf:name "+'"'+Name+'"'+" . "
+						+" } ";
+
+		return getPictureByQuery(query,"image");
+	}
+	
+	public static ArrayList<String> getAllPictureType(String type){
+		String query = "PREFIX albumPhoto: <http://www.semanticweb.org/Projet/AlbumPhoto.owl#>"
+						+" PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> "
+						+" SELECT DISTINCT ?image "
+						+" WHERE { "
+						+"  ?image rdf:type albumPhoto:"+type+" . "
+						+" } ";
+
+		return getPictureByQuery(query,"image");
+	}
 	
 	
 	public static void main(String[] args){
@@ -247,7 +353,16 @@ public class AnnotePictureController {
 		//ArrayList<String> res = getAllPictureContainTwoPersonByURI("<http://www.semanticweb.org/Projet/AlbumPhoto.owl#ManuelAtencia>","<http://www.semanticweb.org/Projet/AlbumPhoto.owl#FlorianPizzala>");
 		//ArrayList<String> res = getAllPictureContainTwoPersonByNames("Manuel","Atencia","Florian","Pizzala");
 		//ArrayList<String> res = getAllPictureContainSomePerson();
-		ArrayList<String> res = getAllPictureNotContainPerson();
+		//ArrayList<String> res = getAllPictureNotContainPerson();
+		//ArrayList<String> res = getAllFriendPictureByUri("<http://www.semanticweb.org/Projet/AlbumPhoto.owl#GaetanRomagna>");
+		//ArrayList<String> res = getAllFriendPictureByName("Gaetan","Romagna");
+		//ArrayList<String> res = getAllPictureTakeOnEvent();
+		//ArrayList<String> res = getAllPictureTakeOnEventDepictingAPersonByName("Gaetan","Romagna");
+		//ArrayList<String> res = getAllPictureByPlaceName("Grenoble");
+		//ArrayList<String> res = getAllPictureByRegionName("Isère");
+		//ArrayList<String> res = getAllPictureByObjectName("stylo");
+		//ArrayList<String> res = getAllPictureByAnimalName("chien");
+		ArrayList<String> res = getAllPictureType("selfie");
 		for(String s : res){
 			System.out.println(s);
 		}

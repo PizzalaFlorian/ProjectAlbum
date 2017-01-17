@@ -7,7 +7,9 @@
 	xmlns:ui="http://java.sun.com/jsf/facelets"
 	xmlns:p="http://primefaces.org/ui">
 	
-<h:head></h:head>
+<h:head>
+	<link href="resources/style.css" type="text/css" rel="stylesheet" />
+</h:head>
 
 <f:view>
 <h:body>
@@ -19,10 +21,10 @@
 		<p:dataGrid var="picture" value='#{albumController.getAlbumById(request.getParameter("albumId")).pictures}' 
 	    			columns="3" layout="grid" paginator="false">
 			<f:facet name="header">
-		    	#{albumController.getAlbumById(request.getParameter("albumId")).title}
+		    	Les photos de l'ablum #{albumController.getAlbumById(request.getParameter("albumId")).title}
 			</f:facet>
 			<p:panel header="#{picture.id}" style="text-align:center">
-				<h:panelGrid columns="1" style="width:100%">
+				<h:panelGrid columns="1" style="width:100%;height:300px;">
 				
 					<p:graphicImage value="#{picture.localfile}" width="128"/>
 					

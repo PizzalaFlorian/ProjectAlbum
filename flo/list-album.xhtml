@@ -19,7 +19,7 @@
 		<p:carousel value="#{albumController.getListAlbumOwnedByCurrentUser()}" headerText="Mes Albums" var="album" 
 		    		itemStyle="text-align:center" responsive="true">
 			<p:panelGrid columns="2" columnClasses="label,value" layout="grid"
-						 style="width:100%;margin:10px 0px;display:flex;flex-direction:column;justify-content:center;align-items:center;" styleClass="ui-panelgrid-blank">
+						 style="width:100%;margin:10px 0px;display:flex;flex-direction:column;justify-content:center;align-items:center;height:300px;" styleClass="ui-panelgrid-blank">
 					<f:facet name="header">
 						<p:imageSwitch effect="fade" id="fadeEffect">
 							<ui:repeat value="#{album.pictures}" var="picture" id="fadeEffectImages">

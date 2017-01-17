@@ -1,0 +1,25 @@
+.flexcenter{
+	display:flex;
+	flex-direction:row;
+	justify-content:center;
+	align-items:center;
+	margin-top:15%;
+}
+
+.flexCenterColumn{
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+	align-items:center;
+}
+
+.center{
+	text-align:center;
+}
+.labelForm{
+	padding-left:6px;
+}
+
+#fadeEffect{
+	background-color:white !important;
+}

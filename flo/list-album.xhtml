@@ -1,0 +1,71 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" 
+	xmlns:f="http://java.sun.com/jsf/core" 
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:c="http://java.sun.com/jsp/jstl/core"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:p="http://primefaces.org/ui">
+
+<h:head>
+	<link href="resources/style.css" type="text/css" rel="stylesheet" />
+</h:head>
+
+<f:view>
+<h:body>
+
+	<h:form id="form">
+	
+		<p:carousel value="#{albumController.getListAlbumOwnedByCurrentUser()}" headerText="Mes Albums" var="album" 
+		    		itemStyle="text-align:center" responsive="true">
+			<p:panelGrid columns="2" columnClasses="label,value" layout="grid"
+						 style="width:100%;margin:10px 0px;display:flex;flex-direction:column;justify-content:center;align-items:center;" styleClass="ui-panelgrid-blank">
+					<f:facet name="header">
+						<p:imageSwitch effect="fade" id="fadeEffect">
+							<ui:repeat value="#{album.pictures}" var="picture" id="fadeEffectImages">
+								<h:outputLink value="album.xhtml">
+									<f:param name="albumId" value="${album.id}"/>
+									<p:graphicImage value="#{picture.localfile}" id="image" width="128" />
+								</h:outputLink>	
+							</ui:repeat>
+						</p:imageSwitch>    
+					</f:facet>
+					 
+					<h:outputText value="#{album.title}" class="center"/>
+					<br/>
+					<h:outputText value="#{album.description}" class="center"/>
+					<br/>
+					<p:commandButton action="#{albumController.deleteAlbumById(album.id)}" value="Supprimer"/>
+					
+					<f:facet name="footer">
+						<p:commandButton oncomplete="PF('shareDialog').show()" icon="ui-icon-link">
+							<f:setPropertyActionListener value="#{album}" target="#{albumController.selectedAlbum}" />
+						</p:commandButton>
+					</f:facet>		 
+			</p:panelGrid>
+		</p:carousel>
+		    
+		<p:dialog header="Partager Avec" widgetVar="shareDialog" modal="true" showEffect="fade" hideEffect="fade" resizable="false">
+			<h:panelGrid columns="2" style="margin-bottom:10px" cellpadding="5" columnClasses="label, value">
+			
+		        <p:selectOneListbox value="#{appUserController.selectedUser}" var="u" filter="true" filterMatchMode="contains">
+	            	<f:selectItems value="#{appUserService.listUsers()}" var="user" itemLabel="#{user.firstname} #{user.lastname}" itemValue="#{user}" />
+		        	<p:column>
+                		#{u.firstname} #{u.lastname}
+            		</p:column>
+		        </p:selectOneListbox>
+		        
+		    </h:panelGrid>
+		    <p:separator />
+			<p:commandButton value="Partager" action="#{albumController.shareAlbum(albumController.selectedAlubm.id, appUserController.selectedUser.id)}" />	
+		</p:dialog>
+	        
+		<a href="/ProjetAlbum/faces/add-album.xhtml">Ajouter album</a>
+
+	</h:form>
+
+</h:body>
+</f:view>
+
+</html>
+

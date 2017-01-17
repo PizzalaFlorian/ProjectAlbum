@@ -1,0 +1,35 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" 
+	xmlns:f="http://java.sun.com/jsf/core" 
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:p="http://primefaces.org/ui">
+	
+<h:head>
+	<link href="resources/style.css" type="text/css" rel="stylesheet" />
+</h:head>
+
+<h:body>
+	<f:facet name="last">
+	  <h:outputStylesheet library="default" name="css/style.css" />
+	</f:facet>
+	<div class="flexcenter">
+		<h:form class="form loginForm">
+		<p:outputLabel class="email" for="email" value="Adresse email : " />
+		<p:inputText class="inputForm" id="email" value="#{appUserSession.email}" 
+			title="Renseignez votre email"/>
+		<br/>
+		<p:outputLabel class="labelForm" for="password" value="Mot de passe : " />
+		<p:password class="inputForm" id="password" value="#{appUserSession.password}" 
+					title="Donnez un mot de passe"/>
+		<br/>
+		
+		<p:commandButton action="#{appUserSession.login()}" value="Me connecter" icon="ui-icon-star"/>
+		<p:commandButton action="#{appUserSession.goToAdd()}" value="M'inscrire"/>
+	</h:form>
+	</div>
+	
+</h:body>
+
+</html>
